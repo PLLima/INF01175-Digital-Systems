@@ -1,0 +1,5 @@
+set_property PACKAGE_PIN W16 [get_ports B]
+set_property PACKAGE_PIN W15 [get_ports C_IN]
+set_property PACKAGE_PIN V14 [get_ports SUM]
+set_property PACKAGE_PIN W14 [get_ports C_OUT]
+set_property PACKAGE_PIN U14 [get_ports A]
