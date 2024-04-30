@@ -1,0 +1,16 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2.2 (lin64) Build 4126759 Thu Feb  8 23:52:05 MST 2024
+| Date         : Tue Apr 30 12:02:16 2024
+| Host         : PLLima running 64-bit Ubuntu 22.04.4 LTS
+| Command      : report_bus_skew -warn_on_violation -file Button_FSM_bus_skew_routed.rpt -pb Button_FSM_bus_skew_routed.pb -rpx Button_FSM_bus_skew_routed.rpx
+| Design       : Button_FSM
+| Device       : 7a12t-cpg238
+| Speed File   : -3  PRODUCTION 1.23 2018-06-13
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+No bus skew constraints
+

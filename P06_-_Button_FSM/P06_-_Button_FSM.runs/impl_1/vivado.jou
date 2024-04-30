@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2.2 (64-bit)
+# SW Build 4126759 on Thu Feb  8 23:52:05 MST 2024
+# IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+# SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+# Start of session at: Tue Apr 30 12:01:44 2024
+# Process ID: 16105
+# Current directory: /home/pllima0909/Documents/Git/INF01175-Digital-Systems/P06_-_Button_FSM/P06_-_Button_FSM.runs/impl_1
+# Command line: vivado -log Button_FSM.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Button_FSM.tcl -notrace
+# Log file: /home/pllima0909/Documents/Git/INF01175-Digital-Systems/P06_-_Button_FSM/P06_-_Button_FSM.runs/impl_1/Button_FSM.vdi
+# Journal file: /home/pllima0909/Documents/Git/INF01175-Digital-Systems/P06_-_Button_FSM/P06_-_Button_FSM.runs/impl_1/vivado.jou
+# Running On: PLLima, OS: Linux, CPU Frequency: 1810.161 MHz, CPU Physical cores: 16, Host memory: 16106 MB
+#-----------------------------------------------------------
+source Button_FSM.tcl -notrace

@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../P06_-_Button_FSM.srcs/sources_1/new/Button_FSM.vhd" \
+"../../../../P06_-_Button_FSM.srcs/sim_1/new/tb_Button_FSM.vhd" \
+
+# Do not sort compile order
+nosort
