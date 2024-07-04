@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pllima0909/Documents/Git/INF01175-Digital-Systems/P07_-_Memory_FSM/P07_-_Memory_FSM.srcs/sources_1/new/Memory_FSM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Memory_FSM'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pllima0909/Documents/Git/INF01175-Digital-Systems/P07_-_Memory_FSM/P07_-_Memory_FSM.srcs/sim_1/new/Test_Memory_FSM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_Memory_FSM'

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2.2 (64-bit)
+# SW Build 4126759 on Thu Feb  8 23:52:05 MST 2024
+# IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+# SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+# Start of session at: Thu Jul  4 14:17:37 2024
+# Process ID: 5040
+# Current directory: /home/pllima0909/Documents/Git/INF01175-Digital-Systems/P07_-_Memory_FSM/P07_-_Memory_FSM.runs/synth_1
+# Command line: vivado -log Memory_FSM.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Memory_FSM.tcl
+# Log file: /home/pllima0909/Documents/Git/INF01175-Digital-Systems/P07_-_Memory_FSM/P07_-_Memory_FSM.runs/synth_1/Memory_FSM.vds
+# Journal file: /home/pllima0909/Documents/Git/INF01175-Digital-Systems/P07_-_Memory_FSM/P07_-_Memory_FSM.runs/synth_1/vivado.jou
+# Running On: PLLima, OS: Linux, CPU Frequency: 1516.602 MHz, CPU Physical cores: 16, Host memory: 16106 MB
+#-----------------------------------------------------------
+source Memory_FSM.tcl -notrace
