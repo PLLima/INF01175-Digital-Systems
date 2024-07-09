@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../P08_-_Multiplier_Pipeline.gen/sources_1/ip/Multiplier/sim/Multiplier.vhd" \
+"../../../../P08_-_Multiplier_Pipeline.srcs/sources_1/new/Multiplier_Pipeline.vhd" \
+"../../../../P08_-_Multiplier_Pipeline.srcs/sim_1/new/tb_Multiplier_Pipeline.vhd" \
+
+# Do not sort compile order
+nosort

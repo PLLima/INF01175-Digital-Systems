@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2.2 (64-bit)
+# SW Build 4126759 on Thu Feb  8 23:52:05 MST 2024
+# IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+# SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+# Start of session at: Tue Jul  9 11:45:48 2024
+# Process ID: 10904
+# Current directory: /home/pllima0909/Documents/Git/INF01175-Digital-Systems/P08_-_Multiplier_Pipeline/P08_-_Multiplier_Pipeline.runs/Multiplier_synth_1
+# Command line: vivado -log Multiplier.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Multiplier.tcl
+# Log file: /home/pllima0909/Documents/Git/INF01175-Digital-Systems/P08_-_Multiplier_Pipeline/P08_-_Multiplier_Pipeline.runs/Multiplier_synth_1/Multiplier.vds
+# Journal file: /home/pllima0909/Documents/Git/INF01175-Digital-Systems/P08_-_Multiplier_Pipeline/P08_-_Multiplier_Pipeline.runs/Multiplier_synth_1/vivado.jou
+# Running On: PLLima, OS: Linux, CPU Frequency: 1419.051 MHz, CPU Physical cores: 16, Host memory: 16106 MB
+#-----------------------------------------------------------
+source Multiplier.tcl -notrace
