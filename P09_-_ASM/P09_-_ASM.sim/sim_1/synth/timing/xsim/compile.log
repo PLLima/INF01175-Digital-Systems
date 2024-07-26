@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pllima0909/Documents/Git/INF01175-Digital-Systems/P09_-_ASM/P09_-_ASM.sim/sim_1/synth/timing/xsim/tb_ASM_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ASM
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pllima0909/Documents/Git/INF01175-Digital-Systems/P09_-_ASM/P09_-_ASM.srcs/sim_1/new/tb_ASM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_ASM'
