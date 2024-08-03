@@ -1,0 +1,6 @@
+0.7
+2020.2
+Feb  8 2024
+23:58:30
+/home/pllima0909/Documents/Git/INF01175-Digital-Systems/T01_-_Neander/T01_-_Neander.sim/sim_1/impl/timing/xsim/Neander_time_impl.v,1722648661,verilog,,,,Datapath;FSM;Neander;blk_mem_gen_0;blk_mem_gen_0_blk_mem_gen_generic_cstr;blk_mem_gen_0_blk_mem_gen_prim_width;blk_mem_gen_0_blk_mem_gen_prim_wrapper_init;blk_mem_gen_0_blk_mem_gen_top;blk_mem_gen_0_blk_mem_gen_v8_4_7;blk_mem_gen_0_blk_mem_gen_v8_4_7_synth;board;glbl,,,,,,,,
+/home/pllima0909/Documents/Git/INF01175-Digital-Systems/T01_-_Neander/T01_-_Neander.srcs/sim_1/new/tb_Neander.vhd,1722614436,vhdl,,,,cfg_tb_neander;tb_neander,,,,,,,,

@@ -1,0 +1,6 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pllima0909/Documents/Git/INF01175-Digital-Systems/T01_-_Neander/T01_-_Neander.srcs/sources_1/new/Board.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'board'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pllima0909/Documents/Git/INF01175-Digital-Systems/T01_-_Neander/T01_-_Neander.srcs/sources_1/new/Datapath.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Datapath'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pllima0909/Documents/Git/INF01175-Digital-Systems/T01_-_Neander/T01_-_Neander.srcs/sources_1/new/Neander.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Neander'

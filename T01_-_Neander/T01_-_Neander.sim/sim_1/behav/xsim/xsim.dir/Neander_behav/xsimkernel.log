@@ -1,0 +1,7 @@
+Running: xsim.dir/Neander_behav/xsimk -simmode gui -wdb Neander_behav.wdb -simrunnum 0 -socket 33821
+Design successfully loaded
+Design Loading Memory Usage: 23860 KB (Peak: 24336 KB)
+Design Loading CPU Usage: 60 ms
+Simulation completed
+Simulation Memory Usage: 122508 KB (Peak: 163128 KB)
+Simulation CPU Usage: 80 ms

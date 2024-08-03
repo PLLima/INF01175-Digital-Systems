@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xa7a12tcpg238-2I" LaunchTime="1722648199">
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="Neander_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS" Name="Neander_routed.rqs"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="RDI-RDI" Name="Neander.vdi"/>
+  <File Type="BG-DRC" Name="Neander.drc"/>
+  <File Type="BG-BGN" Name="Neander.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="Neander.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="Neander.ltx"/>
+  <File Type="RBD_FILE" Name="Neander.rbd"/>
+  <File Type="NPI_FILE" Name="Neander.npi"/>
+  <File Type="RNPI_FILE" Name="Neander.rnpi"/>
+  <File Type="CFI_FILE" Name="Neander.cfi"/>
+  <File Type="RCFI_FILE" Name="Neander.rcfi"/>
+  <File Type="PL-PDI-FILE" Name="Neander_pld.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="Neander_boot.pdi"/>
+  <File Type="PDI-FILE" Name="Neander.pdi"/>
+  <File Type="BITSTR-MMI" Name="Neander.mmi"/>
+  <File Type="BITSTR-BMM" Name="Neander_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="Neander.nky"/>
+  <File Type="BITSTR-RBT" Name="Neander.rbt"/>
+  <File Type="BITSTR-MSK" Name="Neander.msk"/>
+  <File Type="BG-BIN" Name="Neander.bin"/>
+  <File Type="BG-BIT" Name="Neander.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Neander_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Neander_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Neander_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Neander_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Neander_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Neander_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Neander_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Neander_postroute_physopt.dcp"/>
+  <File Type="ROUTE-RQS-PB" Name="Neander_rqs_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="Neander_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="Neander_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW" Name="Neander_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="Neander_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="Neander_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Neander_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="Neander_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Neander_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="Neander_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="Neander_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="Neander_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="Neander_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="Neander_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Neander_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Neander_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Neander_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="Neander_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="Neander_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="Neander_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Neander_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="Neander_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Neander_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="Neander_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="Neander_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="Neander_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="Neander_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Neander_postplace_pwropt.dcp"/>
+  <File Type="PLACE-RQA-PB" Name="Neander_rqa_placed.pb"/>
+  <File Type="PLACE-TIMING" Name="Neander_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Neander_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="Neander_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="Neander_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Neander_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="Neander_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="Neander_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="Neander_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="Neander_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="Neander_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="Neander_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="Neander_pwropt.dcp"/>
+  <File Type="OPT-RQA-PB" Name="Neander_rqa_opted.pb"/>
+  <File Type="OPT-TIMING" Name="Neander_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="Neander.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="Neander_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="Neander_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="Neander_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="Neander_timing_summary_init.rpt"/>
+  <File Type="REPORTS-TCL" Name="Neander_reports.tcl"/>
+  <File Type="PA-TCL" Name="Neander.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/Board.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Datapath.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/FSM.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Neander.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/blk_mem_gen_0/even_input.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/blk_mem_gen_0/mult_8bits.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Neander"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/Neander.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_0"/>
+</GenRun>

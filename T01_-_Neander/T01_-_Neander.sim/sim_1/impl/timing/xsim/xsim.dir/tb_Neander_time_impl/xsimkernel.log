@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_Neander_time_impl/xsimk -simmode gui -wdb tb_Neander_time_impl.wdb -simrunnum 0 -socket 51187
+Design successfully loaded
+Design Loading Memory Usage: 27008 KB (Peak: 27008 KB)
+Design Loading CPU Usage: 70 ms
+Simulation completed
+Simulation Memory Usage: 113516 KB (Peak: 166276 KB)
+Simulation CPU Usage: 500 ms
