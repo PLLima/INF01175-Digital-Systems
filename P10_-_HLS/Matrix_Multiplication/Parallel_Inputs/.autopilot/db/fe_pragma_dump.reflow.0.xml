@@ -1,0 +1,8 @@
+<pragmas>
+<pragma file="HLS_files/matrixmul.cpp" line="10" pragmaType="unroll" parentfunction="matrixmul" factor="-1" skip_exit_check="0"/>
+<pragma file="HLS_files/matrixmul.cpp" line="9" pragmaType="unroll" parentfunction="matrixmul" factor="-1" skip_exit_check="0"/>
+<pragma file="HLS_files/matrixmul.cpp" line="8" pragmaType="unroll" parentfunction="matrixmul" factor="-1" skip_exit_check="0"/>
+<pragma file="HLS_files/matrixmul.cpp" line="11" pragmaType="array_reshape" parentfunction="matrixmul" dim="0" factor="0" mode="complete" variable="a"/>
+<pragma file="HLS_files/matrixmul.cpp" line="12" pragmaType="array_reshape" parentfunction="matrixmul" dim="0" factor="0" mode="complete" variable="b"/>
+<pragma file="HLS_files/matrixmul.cpp" line="13" pragmaType="array_reshape" parentfunction="matrixmul" dim="0" factor="0" mode="complete" variable="res"/>
+</pragmas>

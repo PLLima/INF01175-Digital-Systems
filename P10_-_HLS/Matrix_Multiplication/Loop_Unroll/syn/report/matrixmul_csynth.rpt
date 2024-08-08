@@ -1,0 +1,172 @@
+
+
+================================================================
+== Vitis HLS Report for 'matrixmul'
+================================================================
+* Date:           Thu Aug  8 11:44:06 2024
+
+* Version:        2023.2.2 (Build 4101106 on Feb  9 2024)
+* Project:        Matrix_Multiplication
+* Solution:       Loop_Unroll (Vivado IP Flow Target)
+* Product family: spartan7
+* Target device:  xc7s75-fgga676-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  3.00 ns|  2.100 ns|     0.81 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |       12|       12|  36.000 ns|  36.000 ns|   13|   13|       no|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+-------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF  |  LUT  | URAM|
++-----------------+---------+-----+-------+-------+-----+
+|DSP              |        -|    4|      -|      -|    -|
+|Expression       |        -|    -|      -|      -|    -|
+|FIFO             |        -|    -|      -|      -|    -|
+|Instance         |        -|    4|      0|      0|    -|
+|Memory           |        -|    -|      -|      -|    -|
+|Multiplexer      |        -|    -|      -|    185|    -|
+|Register         |        -|    -|    173|      -|    -|
++-----------------+---------+-----+-------+-------+-----+
+|Total            |        0|    8|    173|    185|    0|
++-----------------+---------+-----+-------+-------+-----+
+|Available        |      180|  140|  96000|  48000|    0|
++-----------------+---------+-----+-------+-------+-----+
+|Utilization (%)  |        0|    5|     ~0|     ~0|    0|
++-----------------+---------+-----+-------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +-----------------------+--------------------+---------+----+---+----+-----+
+    |        Instance       |       Module       | BRAM_18K| DSP| FF| LUT| URAM|
+    +-----------------------+--------------------+---------+----+---+----+-----+
+    |mul_8ns_8ns_16_4_1_U1  |mul_8ns_8ns_16_4_1  |        0|   1|  0|   0|    0|
+    |mul_8ns_8ns_16_4_1_U2  |mul_8ns_8ns_16_4_1  |        0|   1|  0|   0|    0|
+    |mul_8ns_8ns_16_4_1_U3  |mul_8ns_8ns_16_4_1  |        0|   1|  0|   0|    0|
+    |mul_8ns_8ns_16_4_1_U4  |mul_8ns_8ns_16_4_1  |        0|   1|  0|   0|    0|
+    +-----------------------+--------------------+---------+----+---+----+-----+
+    |Total                  |                    |        0|   4|  0|   0|    0|
+    +-----------------------+--------------------+---------+----+---+----+-----+
+
+    * DSP: 
+    +-----------------------------------+--------------------------------+--------------+
+    |              Instance             |             Module             |  Expression  |
+    +-----------------------------------+--------------------------------+--------------+
+    |mac_muladd_8ns_8ns_16ns_16_4_1_U5  |mac_muladd_8ns_8ns_16ns_16_4_1  |  i0 + i1 * i2|
+    |mac_muladd_8ns_8ns_16ns_16_4_1_U6  |mac_muladd_8ns_8ns_16ns_16_4_1  |  i0 + i1 * i2|
+    |mac_muladd_8ns_8ns_16ns_16_4_1_U7  |mac_muladd_8ns_8ns_16ns_16_4_1  |  i0 + i1 * i2|
+    |mac_muladd_8ns_8ns_16ns_16_4_1_U8  |mac_muladd_8ns_8ns_16ns_16_4_1  |  i0 + i1 * i2|
+    +-----------------------------------+--------------------------------+--------------+
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    +--------------+----+-----------+-----+-----------+
+    |     Name     | LUT| Input Size| Bits| Total Bits|
+    +--------------+----+-----------+-----+-----------+
+    |a_address0    |  15|          3|    2|          6|
+    |a_address1    |  15|          3|    2|          6|
+    |ap_NS_fsm     |  65|         14|    1|         14|
+    |b_address0    |  15|          3|    2|          6|
+    |b_address1    |  15|          3|    2|          6|
+    |res_address0  |  15|          3|    2|          6|
+    |res_address1  |  15|          3|    2|          6|
+    |res_d0        |  15|          3|   16|         48|
+    |res_d1        |  15|          3|   16|         48|
+    +--------------+----+-----------+-----+-----------+
+    |Total         | 185|         38|   45|        146|
+    +--------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +--------------------+----+----+-----+-----------+
+    |        Name        | FF | LUT| Bits| Const Bits|
+    +--------------------+----+----+-----+-----------+
+    |add_ln60_1_reg_378  |  16|   0|   16|          0|
+    |add_ln60_2_reg_383  |  16|   0|   16|          0|
+    |add_ln60_3_reg_388  |  16|   0|   16|          0|
+    |add_ln60_reg_373    |  16|   0|   16|          0|
+    |ap_CS_fsm           |  13|   0|   13|          0|
+    |mul_ln60_1_reg_353  |  16|   0|   16|          0|
+    |mul_ln60_3_reg_358  |  16|   0|   16|          0|
+    |mul_ln60_5_reg_363  |  16|   0|   16|          0|
+    |mul_ln60_7_reg_368  |  16|   0|   16|          0|
+    |reg_165             |   8|   0|    8|          0|
+    |reg_169             |   8|   0|    8|          0|
+    |reg_173             |   8|   0|    8|          0|
+    |reg_177             |   8|   0|    8|          0|
+    +--------------------+----+----+-----+-----------+
+    |Total               | 173|   0|  173|          0|
+    +--------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------+-----+-----+------------+--------------+--------------+
+|   RTL Ports  | Dir | Bits|  Protocol  | Source Object|    C Type    |
++--------------+-----+-----+------------+--------------+--------------+
+|ap_clk        |   in|    1|  ap_ctrl_hs|     matrixmul|  return value|
+|ap_rst        |   in|    1|  ap_ctrl_hs|     matrixmul|  return value|
+|ap_start      |   in|    1|  ap_ctrl_hs|     matrixmul|  return value|
+|ap_done       |  out|    1|  ap_ctrl_hs|     matrixmul|  return value|
+|ap_idle       |  out|    1|  ap_ctrl_hs|     matrixmul|  return value|
+|ap_ready      |  out|    1|  ap_ctrl_hs|     matrixmul|  return value|
+|a_address0    |  out|    2|   ap_memory|             a|         array|
+|a_ce0         |  out|    1|   ap_memory|             a|         array|
+|a_q0          |   in|    8|   ap_memory|             a|         array|
+|a_address1    |  out|    2|   ap_memory|             a|         array|
+|a_ce1         |  out|    1|   ap_memory|             a|         array|
+|a_q1          |   in|    8|   ap_memory|             a|         array|
+|b_address0    |  out|    2|   ap_memory|             b|         array|
+|b_ce0         |  out|    1|   ap_memory|             b|         array|
+|b_q0          |   in|    8|   ap_memory|             b|         array|
+|b_address1    |  out|    2|   ap_memory|             b|         array|
+|b_ce1         |  out|    1|   ap_memory|             b|         array|
+|b_q1          |   in|    8|   ap_memory|             b|         array|
+|res_address0  |  out|    2|   ap_memory|           res|         array|
+|res_ce0       |  out|    1|   ap_memory|           res|         array|
+|res_we0       |  out|    1|   ap_memory|           res|         array|
+|res_d0        |  out|   16|   ap_memory|           res|         array|
+|res_address1  |  out|    2|   ap_memory|           res|         array|
+|res_ce1       |  out|    1|   ap_memory|           res|         array|
+|res_we1       |  out|    1|   ap_memory|           res|         array|
+|res_d1        |  out|   16|   ap_memory|           res|         array|
++--------------+-----+-----+------------+--------------+--------------+
+

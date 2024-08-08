@@ -1,0 +1,45 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/pllima0909/Documents/Git/INF01175-Digital-Systems/P10_-_HLS/Matrix_Multiplication/Parallel_Inputs/directives.tcl:11:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="matrixmul" ARG_PragmaIsValid="1" ARG_PragmaOptions="complete dim=0 variable=a" ARG_PragmaType="array_reshape" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/pllima0909/Documents/Git/INF01175-Digital-Systems/P10_-_HLS/Matrix_Multiplication/Parallel_Inputs/directives.tcl:12:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="matrixmul" ARG_PragmaIsValid="1" ARG_PragmaOptions="complete dim=0 variable=b" ARG_PragmaType="array_reshape" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/pllima0909/Documents/Git/INF01175-Digital-Systems/P10_-_HLS/Matrix_Multiplication/Parallel_Inputs/directives.tcl:13:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="matrixmul" ARG_PragmaIsValid="1" ARG_PragmaOptions="complete dim=0 variable=res" ARG_PragmaType="array_reshape" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/pllima0909/Documents/Git/INF01175-Digital-Systems/P10_-_HLS/Matrix_Multiplication/Parallel_Inputs/csynth.tcl:16:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="matrixmul" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=matrixmul" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/pllima0909/Documents/Git/INF01175-Digital-Systems/P10_-_HLS/Matrix_Multiplication/Parallel_Inputs/directives.tcl:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="matrixmul" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=matrixmul" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/pllima0909/Documents/Git/INF01175-Digital-Systems/P10_-_HLS/Matrix_Multiplication/Parallel_Inputs/directives.tcl:10:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="matrixmul" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/pllima0909/Documents/Git/INF01175-Digital-Systems/P10_-_HLS/Matrix_Multiplication/Parallel_Inputs/directives.tcl:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="matrixmul" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/pllima0909/Documents/Git/INF01175-Digital-Systems/P10_-_HLS/Matrix_Multiplication/Parallel_Inputs/directives.tcl:8:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="matrixmul" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="HLS_files/matrixmul.cpp:52:0" msg_body="Unrolling loop 'Row' (HLS_files/matrixmul.cpp:54:9) in function 'matrixmul' completely with a factor of 2">
+        <args Factor="2" LoopLoc="HLS_files/matrixmul.cpp:54:9" LoopName="Row"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="HLS_files/matrixmul.cpp:52:0" msg_body="Unrolling loop 'Col' (HLS_files/matrixmul.cpp:56:12) in function 'matrixmul' completely with a factor of 2">
+        <args Factor="2" LoopLoc="HLS_files/matrixmul.cpp:56:12" LoopName="Col"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="HLS_files/matrixmul.cpp:52:0" msg_body="Unrolling loop 'Product' (HLS_files/matrixmul.cpp:59:19) in function 'matrixmul' completely with a factor of 2">
+        <args Factor="2" LoopLoc="HLS_files/matrixmul.cpp:59:19" LoopName="Product"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="HLS_files/matrixmul.cpp:52:0" msg_body="Applying array_reshape to 'a': Complete reshaping on dimension 1. Complete reshaping on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="a"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="HLS_files/matrixmul.cpp:52:0" msg_body="Applying array_reshape to 'b': Complete reshaping on dimension 1. Complete reshaping on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="b"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="HLS_files/matrixmul.cpp:52:0" msg_body="Applying array_reshape to 'res': Complete reshaping on dimension 1. Complete reshaping on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="res"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

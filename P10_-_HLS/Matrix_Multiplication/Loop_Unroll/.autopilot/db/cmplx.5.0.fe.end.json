@@ -1,0 +1,17 @@
+{
+    "0": {
+        "name": "matrixmul",
+        "file": "HLS_files\/matrixmul.cpp",
+        "fileloc": "48",
+        "instructions": "52",
+        "total_instructions": "52",
+        "calls": "",
+        "basicblocks": "1",
+        "loads": {
+            "T": "8"
+        },
+        "stores": {
+            "T": "4"
+        }
+    }
+}

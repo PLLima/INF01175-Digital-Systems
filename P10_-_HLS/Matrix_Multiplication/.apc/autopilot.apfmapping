@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="matrixmul.cpp" path="/home/pllima0909/Documents/Git/INF01175-Digital-Systems/P10_-_HLS/HLS_files/matrixmul.cpp"/>
+    <originFiles name="matrixmul.h" path="/home/pllima0909/Documents/Git/INF01175-Digital-Systems/P10_-_HLS/HLS_files/matrixmul.h"/>
+  </source>
+  <testbench>
+    <originFiles name="matrixmul_test.cpp" path="/home/pllima0909/Documents/Git/INF01175-Digital-Systems/P10_-_HLS/HLS_files/matrixmul_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [HLS 200-1016] The critical path in module 'matrixmul' consists of the following:&#xA;&#x9;'store' operation 0 bit ('indvar_flatten_write_ln0') of constant 0 on local variable 'indvar_flatten' [14]  (1.581 ns)&#xA;&#x9;'load' operation 3 bit ('indvar_flatten_load', HLS_files/matrixmul.cpp:54) on local variable 'indvar_flatten' [19]  (0.000 ns)&#xA;&#x9;'icmp' operation 1 bit ('icmp_ln54', HLS_files/matrixmul.cpp:54) [20]  (1.727 ns)&#xA;&#xA;&#xA;Resolution: For help on HLS 200-1016 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=200-1016.html" projectName="Matrix_Multiplication" solutionName="Smaller_Clk_Period" date="2024-08-08T11:41:43.379-0300" type="Warning"/>
+        <logs message="WARNING: [HLS 200-871] Estimated clock period (3.308 ns) exceeds the target (target clock period: 3.000 ns, clock uncertainty: 0.810 ns, effective delay budget: 2.190 ns).&#xA;Resolution: For help on HLS 200-871 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=200-871.html" projectName="Matrix_Multiplication" solutionName="Smaller_Clk_Period" date="2024-08-08T11:41:43.375-0300" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between 'add' operation 2 bit ('add_ln56', HLS_files/matrixmul.cpp:56) and 'icmp' operation 1 bit ('icmp_ln56', HLS_files/matrixmul.cpp:56).&#xA;Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=200-880.html" projectName="Matrix_Multiplication" solutionName="Smaller_Clk_Period" date="2024-08-08T11:41:43.370-0300" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'add' operation 2 bit ('add_ln56', HLS_files/matrixmul.cpp:56) and 'icmp' operation 1 bit ('icmp_ln56', HLS_files/matrixmul.cpp:56).&#xA;Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=200-880.html" projectName="Matrix_Multiplication" solutionName="Smaller_Clk_Period" date="2024-08-08T11:41:43.365-0300" type="Warning"/>
+        <logs message="WARNING: [HLS 200-1016] The critical path in module 'matrixmul' consists of the following:&#xA;&#x9;'store' operation 0 bit ('j_write_ln56', HLS_files/matrixmul.cpp:56) of constant 0 on local variable 'j', HLS_files/matrixmul.cpp:56 [16]  (1.581 ns)&#xA;&#x9;'load' operation 2 bit ('j_load', HLS_files/matrixmul.cpp:56) on local variable 'j', HLS_files/matrixmul.cpp:56 [24]  (0.000 ns)&#xA;&#x9;'icmp' operation 1 bit ('icmp_ln56', HLS_files/matrixmul.cpp:56) [29]  (1.616 ns)&#xA;&#x9;'select' operation 2 bit ('select_ln54', HLS_files/matrixmul.cpp:54) [30]  (0.993 ns)&#xA;&#x9;'add' operation 2 bit ('add_ln56', HLS_files/matrixmul.cpp:56) [59]  (1.616 ns)&#xA;&#x9;'store' operation 0 bit ('j_write_ln56', HLS_files/matrixmul.cpp:56) of variable 'add_ln56', HLS_files/matrixmul.cpp:56 on local variable 'j', HLS_files/matrixmul.cpp:56 [62]  (1.581 ns)&#xA;&#xA;&#xA;Resolution: For help on HLS 200-1016 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=200-1016.html" projectName="Matrix_Multiplication" solutionName="Basic_Solution" date="2024-08-08T11:40:19.261-0300" type="Warning"/>
+        <logs message="WARNING: [HLS 200-871] Estimated clock period (7.387 ns) exceeds the target (target clock period: 10.000 ns, clock uncertainty: 2.700 ns, effective delay budget: 7.300 ns).&#xA;Resolution: For help on HLS 200-871 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=200-871.html" projectName="Matrix_Multiplication" solutionName="Basic_Solution" date="2024-08-08T11:40:19.257-0300" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

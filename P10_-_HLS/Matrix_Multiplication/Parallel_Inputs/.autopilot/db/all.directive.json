@@ -1,0 +1,176 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "matrixmul",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "matrixmul"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/pllima0909/Documents/Git/INF01175-Digital-Systems/P10_-_HLS/Matrix_Multiplication/Parallel_Inputs/directives.tcl",
+    "sourceLine": 7,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "matrixmul",
+    "id": 1,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "Product",
+    "pragma": {
+      "name": "UNROLL"
+    },
+    "slx": false,
+    "sourceFile": "/home/pllima0909/Documents/Git/INF01175-Digital-Systems/P10_-_HLS/Matrix_Multiplication/Parallel_Inputs/directives.tcl",
+    "sourceLine": 8,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "matrixmul",
+    "id": 2,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "Col",
+    "pragma": {
+      "name": "UNROLL"
+    },
+    "slx": false,
+    "sourceFile": "/home/pllima0909/Documents/Git/INF01175-Digital-Systems/P10_-_HLS/Matrix_Multiplication/Parallel_Inputs/directives.tcl",
+    "sourceLine": 9,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "matrixmul",
+    "id": 3,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "Row",
+    "pragma": {
+      "name": "UNROLL"
+    },
+    "slx": false,
+    "sourceFile": "/home/pllima0909/Documents/Git/INF01175-Digital-Systems/P10_-_HLS/Matrix_Multiplication/Parallel_Inputs/directives.tcl",
+    "sourceLine": 10,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "matrixmul",
+    "id": 4,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "ARRAY_RESHAPE",
+      "option": [
+        {
+          "name": "complete",
+          "value": ""
+        },
+        {
+          "name": "dim",
+          "value": "0"
+        },
+        {
+          "name": "variable",
+          "value": "a"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/pllima0909/Documents/Git/INF01175-Digital-Systems/P10_-_HLS/Matrix_Multiplication/Parallel_Inputs/directives.tcl",
+    "sourceLine": 11,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "matrixmul",
+    "id": 5,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "ARRAY_RESHAPE",
+      "option": [
+        {
+          "name": "complete",
+          "value": ""
+        },
+        {
+          "name": "dim",
+          "value": "0"
+        },
+        {
+          "name": "variable",
+          "value": "b"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/pllima0909/Documents/Git/INF01175-Digital-Systems/P10_-_HLS/Matrix_Multiplication/Parallel_Inputs/directives.tcl",
+    "sourceLine": 12,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "matrixmul",
+    "id": 6,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "ARRAY_RESHAPE",
+      "option": [
+        {
+          "name": "complete",
+          "value": ""
+        },
+        {
+          "name": "dim",
+          "value": "0"
+        },
+        {
+          "name": "variable",
+          "value": "res"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/pllima0909/Documents/Git/INF01175-Digital-Systems/P10_-_HLS/Matrix_Multiplication/Parallel_Inputs/directives.tcl",
+    "sourceLine": 13,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "matrixmul",
+    "id": 7,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "matrixmul"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/pllima0909/Documents/Git/INF01175-Digital-Systems/P10_-_HLS/Matrix_Multiplication/Parallel_Inputs/csynth.tcl",
+    "sourceLine": 16,
+    "success": true
+  }
+]

@@ -1,0 +1,36 @@
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        Col
+  - String:          '> at '
+  - LoopLoc:         'HLS_files/matrixmul.cpp:56:12'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: HLS_files/matrixmul.cpp, Line: 59, Column: 19 }
+Function:        _Z9matrixmulPA2_hS0_PA2_t
+Args:            
+  - String:          'Loop '''
+  - LoopName:        Product
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: HLS_files/matrixmul.cpp, Line: 52, Column: 0 }
+Function:        _Z9matrixmulPA2_hS0_PA2_t
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Product
+  - String:          ''' ('
+  - LoopLoc:         'HLS_files/matrixmul.cpp:59:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          matrixmul
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...

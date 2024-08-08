@@ -1,0 +1,45 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="matrixmul" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="matrixmul"/>
+            </pragma>
+        </directive>
+        <directive functionName="matrixmul" label="Product" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="matrixmul" label="Col" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="matrixmul" label="Row" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="matrixmul" label="" functionLabel="">
+            <pragma name="ARRAY_RESHAPE">
+                <option name="complete" value="" positionalBoolean="type"/>
+                <option name="dim" value="0"/>
+                <option name="variable" positionalBoolean="4" value="a"/>
+            </pragma>
+        </directive>
+        <directive functionName="matrixmul" label="" functionLabel="">
+            <pragma name="ARRAY_RESHAPE">
+                <option name="complete" value="" positionalBoolean="type"/>
+                <option name="dim" value="0"/>
+                <option name="variable" positionalBoolean="4" value="b"/>
+            </pragma>
+        </directive>
+        <directive functionName="matrixmul" label="" functionLabel="">
+            <pragma name="ARRAY_RESHAPE">
+                <option name="complete" value="" positionalBoolean="type"/>
+                <option name="dim" value="0"/>
+                <option name="variable" positionalBoolean="4" value="res"/>
+            </pragma>
+        </directive>
+        <directive functionName="matrixmul" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="matrixmul"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

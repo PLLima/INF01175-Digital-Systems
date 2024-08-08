@@ -1,0 +1,5 @@
+<pragmas>
+<pragma file="HLS_files/matrixmul.cpp" line="10" pragmaType="unroll" parentfunction="matrixmul" factor="-1" skip_exit_check="0"/>
+<pragma file="HLS_files/matrixmul.cpp" line="9" pragmaType="unroll" parentfunction="matrixmul" factor="-1" skip_exit_check="0"/>
+<pragma file="HLS_files/matrixmul.cpp" line="8" pragmaType="unroll" parentfunction="matrixmul" factor="-1" skip_exit_check="0"/>
+</pragmas>

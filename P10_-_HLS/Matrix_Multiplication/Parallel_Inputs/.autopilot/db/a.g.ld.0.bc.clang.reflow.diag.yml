@@ -1,0 +1,184 @@
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: HLS_files/matrixmul.cpp, Line: 52, Column: 0 }
+Function:        _Z9matrixmulPA2_hS0_PA2_t
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Row
+  - String:          ''' ('
+  - LoopLoc:         'HLS_files/matrixmul.cpp:54:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          matrixmul
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: HLS_files/matrixmul.cpp, Line: 52, Column: 0 }
+Function:        _Z9matrixmulPA2_hS0_PA2_t
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Col
+  - String:          ''' ('
+  - LoopLoc:         'HLS_files/matrixmul.cpp:56:12'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          matrixmul
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: HLS_files/matrixmul.cpp, Line: 52, Column: 0 }
+Function:        _Z9matrixmulPA2_hS0_PA2_t
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Product
+  - String:          ''' ('
+  - LoopLoc:         'HLS_files/matrixmul.cpp:59:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          matrixmul
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: HLS_files/matrixmul.cpp, Line: 52, Column: 0 }
+Function:        _Z9matrixmulPA2_hS0_PA2_t
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Product
+  - String:          ''' ('
+  - LoopLoc:         'HLS_files/matrixmul.cpp:59:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          matrixmul
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: HLS_files/matrixmul.cpp, Line: 52, Column: 0 }
+Function:        _Z9matrixmulPA2_hS0_PA2_t
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Col
+  - String:          ''' ('
+  - LoopLoc:         'HLS_files/matrixmul.cpp:56:12'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          matrixmul
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: HLS_files/matrixmul.cpp, Line: 52, Column: 0 }
+Function:        _Z9matrixmulPA2_hS0_PA2_t
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Product
+  - String:          ''' ('
+  - LoopLoc:         'HLS_files/matrixmul.cpp:59:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          matrixmul
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: HLS_files/matrixmul.cpp, Line: 52, Column: 0 }
+Function:        _Z9matrixmulPA2_hS0_PA2_t
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Product
+  - String:          ''' ('
+  - LoopLoc:         'HLS_files/matrixmul.cpp:59:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          matrixmul
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-array-reshape
+Name:            ArrayXform
+DebugLoc:        { File: HLS_files/matrixmul.cpp, Line: 52, Column: 0 }
+Function:        _Z9matrixmulPA2_hS0_PA2_t
+Args:            
+  - String:          'Applying '
+  - String:          array_reshape
+  - String:          ' to '''
+  - UOName:          a
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' reshaping'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' reshaping'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-reshape
+Name:            ArrayXform
+DebugLoc:        { File: HLS_files/matrixmul.cpp, Line: 52, Column: 0 }
+Function:        _Z9matrixmulPA2_hS0_PA2_t
+Args:            
+  - String:          'Applying '
+  - String:          array_reshape
+  - String:          ' to '''
+  - UOName:          b
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' reshaping'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' reshaping'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-reshape
+Name:            ArrayXform
+DebugLoc:        { File: HLS_files/matrixmul.cpp, Line: 52, Column: 0 }
+Function:        _Z9matrixmulPA2_hS0_PA2_t
+Args:            
+  - String:          'Applying '
+  - String:          array_reshape
+  - String:          ' to '''
+  - UOName:          res
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' reshaping'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' reshaping'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...

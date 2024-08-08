@@ -1,0 +1,113 @@
+
+
+================================================================
+== Synthesis Summary Report of 'matrixmul'
+================================================================
++ General Information: 
+    * Date:           Thu Aug  8 11:45:48 2024
+    * Version:        2023.2.2 (Build 4101106 on Feb  9 2024)
+    * Project:        Matrix_Multiplication
+    * Solution:       Parallel_Inputs (Vivado IP Flow Target)
+    * Product family: spartan7
+    * Target device:  xc7s75-fgga676-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-------------+------+------+---------+--------+----------+---------+------+----------+------+--------+-----------+----------+-----+
+    |   Modules   | Issue|      | Latency | Latency| Iteration|         | Trip |          |      |        |           |          |     |
+    |   & Loops   | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM |   DSP  |     FF    |    LUT   | URAM|
+    +-------------+------+------+---------+--------+----------+---------+------+----------+------+--------+-----------+----------+-----+
+    |+ matrixmul  |     -|  0.72|        4|  20.000|         -|        5|     -|        no|     -|  8 (5%)|  101 (~0%)|  33 (~0%)|    -|
+    +-------------+------+------+---------+--------+----------+---------+------+----------+------+--------+-----------+----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* Other Ports
++------+---------+-----------+----------+
+| Port | Mode    | Direction | Bitwidth |
++------+---------+-----------+----------+
+| a    | ap_none | in        | 32       |
+| b    | ap_none | in        | 32       |
+| res  | ap_vld  | out       | 64       |
++------+---------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+-----------------+
+| Argument | Direction | Datatype        |
++----------+-----------+-----------------+
+| a        | in        | unsigned char*  |
+| b        | in        | unsigned char*  |
+| res      | out       | unsigned short* |
++----------+-----------+-----------------+
+
+* SW-to-HW Mapping
++----------+--------------+---------+
+| Argument | HW Interface | HW Type |
++----------+--------------+---------+
+| a        | a            | port    |
+| b        | b            | port    |
+| res      | res          | port    |
+| res      | res_ap_vld   | port    |
++----------+--------------+---------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++-------------------------------------+-----+--------+------------+-----+-----------+---------+
+| Name                                | DSP | Pragma | Variable   | Op  | Impl      | Latency |
++-------------------------------------+-----+--------+------------+-----+-----------+---------+
+| + matrixmul                         | 8   |        |            |     |           |         |
+|   mac_muladd_8ns_8ns_16ns_16_4_1_U5 | 1   |        | mul_ln60   | mul | dsp_slice | 3       |
+|   mul_8ns_8ns_16_3_1_U1             | 1   |        | mul_ln60_1 | mul | dsp       | 2       |
+|   mac_muladd_8ns_8ns_16ns_16_4_1_U5 | 1   |        | add_ln60   | add | dsp_slice | 3       |
+|   mac_muladd_8ns_8ns_16ns_16_4_1_U6 | 1   |        | mul_ln60_2 | mul | dsp_slice | 3       |
+|   mul_8ns_8ns_16_3_1_U2             | 1   |        | mul_ln60_3 | mul | dsp       | 2       |
+|   mac_muladd_8ns_8ns_16ns_16_4_1_U6 | 1   |        | add_ln60_1 | add | dsp_slice | 3       |
+|   mac_muladd_8ns_8ns_16ns_16_4_1_U7 | 1   |        | mul_ln60_4 | mul | dsp_slice | 3       |
+|   mul_8ns_8ns_16_3_1_U3             | 1   |        | mul_ln60_5 | mul | dsp       | 2       |
+|   mac_muladd_8ns_8ns_16ns_16_4_1_U7 | 1   |        | add_ln60_2 | add | dsp_slice | 3       |
+|   mac_muladd_8ns_8ns_16ns_16_4_1_U8 | 1   |        | mul_ln60_6 | mul | dsp_slice | 3       |
+|   mul_8ns_8ns_16_3_1_U4             | 1   |        | mul_ln60_7 | mul | dsp       | 2       |
+|   mac_muladd_8ns_8ns_16ns_16_4_1_U8 | 1   |        | add_ln60_3 | add | dsp_slice | 3       |
++-------------------------------------+-----+--------+------------+-----+-----------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++---------------+-----------------------------+---------------------------------------------------------------------------+
+| Type          | Options                     | Location                                                                  |
++---------------+-----------------------------+---------------------------------------------------------------------------+
+| array_reshape | complete dim=0 variable=a   | Matrix_Multiplication/Parallel_Inputs/directives.tcl:11 in matrixmul, a   |
+| array_reshape | complete dim=0 variable=b   | Matrix_Multiplication/Parallel_Inputs/directives.tcl:12 in matrixmul, b   |
+| array_reshape | complete dim=0 variable=res | Matrix_Multiplication/Parallel_Inputs/directives.tcl:13 in matrixmul, res |
+| unroll        |                             | Matrix_Multiplication/Parallel_Inputs/directives.tcl:8 in matrixmul       |
+| unroll        |                             | Matrix_Multiplication/Parallel_Inputs/directives.tcl:9 in matrixmul       |
+| unroll        |                             | Matrix_Multiplication/Parallel_Inputs/directives.tcl:10 in matrixmul      |
++---------------+-----------------------------+---------------------------------------------------------------------------+
+
+

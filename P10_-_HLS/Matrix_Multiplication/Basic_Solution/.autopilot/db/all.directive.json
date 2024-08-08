@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "matrixmul",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "matrixmul"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/pllima0909/Documents/Git/INF01175-Digital-Systems/P10_-_HLS/Matrix_Multiplication/Basic_Solution/csynth.tcl",
+    "sourceLine": 16,
+    "success": true
+  }
+]

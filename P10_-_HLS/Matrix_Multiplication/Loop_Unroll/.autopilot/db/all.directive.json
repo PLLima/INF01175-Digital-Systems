@@ -1,0 +1,89 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "matrixmul",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "matrixmul"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/pllima0909/Documents/Git/INF01175-Digital-Systems/P10_-_HLS/Matrix_Multiplication/Loop_Unroll/directives.tcl",
+    "sourceLine": 7,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "matrixmul",
+    "id": 1,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "Product",
+    "pragma": {
+      "name": "UNROLL"
+    },
+    "slx": false,
+    "sourceFile": "/home/pllima0909/Documents/Git/INF01175-Digital-Systems/P10_-_HLS/Matrix_Multiplication/Loop_Unroll/directives.tcl",
+    "sourceLine": 8,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "matrixmul",
+    "id": 2,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "Col",
+    "pragma": {
+      "name": "UNROLL"
+    },
+    "slx": false,
+    "sourceFile": "/home/pllima0909/Documents/Git/INF01175-Digital-Systems/P10_-_HLS/Matrix_Multiplication/Loop_Unroll/directives.tcl",
+    "sourceLine": 9,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "matrixmul",
+    "id": 3,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "Row",
+    "pragma": {
+      "name": "UNROLL"
+    },
+    "slx": false,
+    "sourceFile": "/home/pllima0909/Documents/Git/INF01175-Digital-Systems/P10_-_HLS/Matrix_Multiplication/Loop_Unroll/directives.tcl",
+    "sourceLine": 10,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "matrixmul",
+    "id": 4,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "matrixmul"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/pllima0909/Documents/Git/INF01175-Digital-Systems/P10_-_HLS/Matrix_Multiplication/Loop_Unroll/csynth.tcl",
+    "sourceLine": 16,
+    "success": true
+  }
+]

@@ -1,0 +1,377 @@
+<profile>
+    <ReportVersion>
+        <Version>2023.2.2</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>spartan7</ProductFamily>
+        <Part>xc7s75-fgga676-1</Part>
+        <TopModelName>matrixmul</TopModelName>
+        <TargetClockPeriod>5.00</TargetClockPeriod>
+        <ClockUncertainty>1.35</ClockUncertainty>
+        <FlowTarget>vivado</FlowTarget>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>no</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>2.932</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>4</Best-caseLatency>
+            <Average-caseLatency>4</Average-caseLatency>
+            <Worst-caseLatency>4</Worst-caseLatency>
+            <Best-caseRealTimeLatency>20.000 ns</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>20.000 ns</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>20.000 ns</Worst-caseRealTimeLatency>
+            <Interval-min>5</Interval-min>
+            <Interval-max>5</Interval-max>
+        </SummaryOfOverallLatency>
+        <SummaryOfViolations>
+            <IssueType>-</IssueType>
+            <ViolationType>-</ViolationType>
+            <SourceLocation>HLS_files/matrixmul.cpp:60</SourceLocation>
+        </SummaryOfViolations>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <DSP>8</DSP>
+            <FF>101</FF>
+            <LUT>33</LUT>
+            <BRAM_18K>0</BRAM_18K>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>180</BRAM_18K>
+            <DSP>140</DSP>
+            <FF>96000</FF>
+            <LUT>48000</LUT>
+            <URAM>0</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>matrixmul</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst</name>
+            <Object>matrixmul</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_start</name>
+            <Object>matrixmul</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_done</name>
+            <Object>matrixmul</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_idle</name>
+            <Object>matrixmul</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_ready</name>
+            <Object>matrixmul</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>a</name>
+            <Object>a</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>b</name>
+            <Object>b</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>res</name>
+            <Object>res</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>64</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>res_ap_vld</name>
+            <Object>res</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule MAX_DEPTH="2">
+            <ModuleName>matrixmul</ModuleName>
+            <BindInstances>mac_muladd_8ns_8ns_16ns_16_4_1_U5 mul_8ns_8ns_16_3_1_U1 mac_muladd_8ns_8ns_16ns_16_4_1_U5 mac_muladd_8ns_8ns_16ns_16_4_1_U6 mul_8ns_8ns_16_3_1_U2 mac_muladd_8ns_8ns_16ns_16_4_1_U6 mac_muladd_8ns_8ns_16ns_16_4_1_U7 mul_8ns_8ns_16_3_1_U3 mac_muladd_8ns_8ns_16ns_16_4_1_U7 mac_muladd_8ns_8ns_16ns_16_4_1_U8 mul_8ns_8ns_16_3_1_U4 mac_muladd_8ns_8ns_16ns_16_4_1_U8</BindInstances>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>matrixmul</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>5.00</TargetClockPeriod>
+                    <ClockUncertainty>1.35</ClockUncertainty>
+                    <EstimatedClockPeriod>2.932</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>4</Best-caseLatency>
+                    <Average-caseLatency>4</Average-caseLatency>
+                    <Worst-caseLatency>4</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>20.000 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>20.000 ns</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>20.000 ns</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>5</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>HLS_files/matrixmul.cpp:60</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <DSP>8</DSP>
+                    <AVAIL_DSP>140</AVAIL_DSP>
+                    <UTIL_DSP>5</UTIL_DSP>
+                    <FF>101</FF>
+                    <AVAIL_FF>96000</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>33</LUT>
+                    <AVAIL_LUT>48000</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>180</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_16_4_1_U5" SOURCE="HLS_files/matrixmul.cpp:60" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln60"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp" LATENCY="2" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_3_1_U1" SOURCE="HLS_files/matrixmul.cpp:60" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln60_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_16_4_1_U5" SOURCE="HLS_files/matrixmul.cpp:60" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln60"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_16_4_1_U6" SOURCE="HLS_files/matrixmul.cpp:60" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln60_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp" LATENCY="2" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_3_1_U2" SOURCE="HLS_files/matrixmul.cpp:60" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln60_3"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_16_4_1_U6" SOURCE="HLS_files/matrixmul.cpp:60" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln60_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_16_4_1_U7" SOURCE="HLS_files/matrixmul.cpp:60" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln60_4"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp" LATENCY="2" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_3_1_U3" SOURCE="HLS_files/matrixmul.cpp:60" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln60_5"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_16_4_1_U7" SOURCE="HLS_files/matrixmul.cpp:60" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln60_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_16_4_1_U8" SOURCE="HLS_files/matrixmul.cpp:60" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln60_6"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp" LATENCY="2" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_16_3_1_U4" SOURCE="HLS_files/matrixmul.cpp:60" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln60_7"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_16_4_1_U8" SOURCE="HLS_files/matrixmul.cpp:60" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln60_3"/>
+            </BindNodes>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <UserConfigCommands/>
+    <Args>
+        <Arg ArgName="a" index="0" direction="in" srcType="unsigned char*" srcSize="8">
+            <hwRefs>
+                <hwRef type="port" interface="a" name="a" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="b" index="1" direction="in" srcType="unsigned char*" srcSize="8">
+            <hwRefs>
+                <hwRef type="port" interface="b" name="b" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="res" index="2" direction="out" srcType="unsigned short*" srcSize="16">
+            <hwRefs>
+                <hwRef type="port" interface="res" name="res" usage="data" direction="out"/>
+                <hwRef type="port" interface="res_ap_vld" name="res_ap_vld" usage="control" direction="out"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_HIGH</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_ctrl" type="ap_ctrl" busTypeName="acc_handshake" mode="slave">
+            <portMaps>
+                <portMap portMapName="ap_start">start</portMap>
+                <portMap portMapName="ap_done">done</portMap>
+                <portMap portMapName="ap_idle">idle</portMap>
+                <portMap portMapName="ap_ready">ready</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_done</port>
+                <port>ap_idle</port>
+                <port>ap_ready</port>
+                <port>ap_start</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="a" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="32">
+            <portMaps>
+                <portMap portMapName="a">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>a</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="a"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="b" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="32">
+            <portMaps>
+                <portMap portMapName="b">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>b</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="b"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="res" type="data" busTypeName="data" protocol="ap_vld" mode="master" dataWidth="64">
+            <portMaps>
+                <portMap portMapName="res">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>res</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="res"/>
+            </constraints>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="Other Ports">
+                <table>
+                    <keys size="4">Port, Mode, Direction, Bitwidth</keys>
+                    <column name="a">ap_none, in, 32</column>
+                    <column name="b">ap_none, in, 32</column>
+                    <column name="res">ap_vld, out, 64</column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table>
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk</column>
+                    <column name="ap_rst">reset, ap_rst</column>
+                    <column name="ap_ctrl">ap_ctrl_hs, ap_done ap_idle ap_ready ap_start</column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table>
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="a">in, unsigned char*</column>
+                    <column name="b">in, unsigned char*</column>
+                    <column name="res">out, unsigned short*</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table>
+                    <keys size="3">Argument, HW Interface, HW Type</keys>
+                    <column name="a">a, port</column>
+                    <column name="b">b, port</column>
+                    <column name="res">res, port</column>
+                    <column name="res">res_ap_vld, port</column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <ResolutionUrl key="ZZZ">docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=ZZZ.html</ResolutionUrl>
+    <PragmaReport>
+        <Pragma type="array_reshape" location="Matrix_Multiplication/Parallel_Inputs/directives.tcl:11" status="valid" parentFunction="matrixmul" variable="a" isDirective="1" options="complete dim=0 variable=a"/>
+        <Pragma type="array_reshape" location="Matrix_Multiplication/Parallel_Inputs/directives.tcl:12" status="valid" parentFunction="matrixmul" variable="b" isDirective="1" options="complete dim=0 variable=b"/>
+        <Pragma type="array_reshape" location="Matrix_Multiplication/Parallel_Inputs/directives.tcl:13" status="valid" parentFunction="matrixmul" variable="res" isDirective="1" options="complete dim=0 variable=res"/>
+        <Pragma type="unroll" location="Matrix_Multiplication/Parallel_Inputs/directives.tcl:8" status="valid" parentFunction="matrixmul" variable="" isDirective="1" options=""/>
+        <Pragma type="unroll" location="Matrix_Multiplication/Parallel_Inputs/directives.tcl:9" status="valid" parentFunction="matrixmul" variable="" isDirective="1" options=""/>
+        <Pragma type="unroll" location="Matrix_Multiplication/Parallel_Inputs/directives.tcl:10" status="valid" parentFunction="matrixmul" variable="" isDirective="1" options=""/>
+    </PragmaReport>
+</profile>
+
