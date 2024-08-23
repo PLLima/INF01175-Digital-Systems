@@ -3,16 +3,16 @@
 # SW Build 4126759 on Thu Feb  8 23:52:05 MST 2024
 # IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
 # SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
-# Start of session at: Tue Jul  9 11:45:48 2024
-# Process ID: 10904
+# Start of session at: Thu Jul 11 10:50:47 2024
+# Process ID: 10044
 # Current directory: /home/pllima0909/Documents/Git/INF01175-Digital-Systems/P08_-_Multiplier_Pipeline/P08_-_Multiplier_Pipeline.runs/Multiplier_synth_1
 # Command line: vivado -log Multiplier.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Multiplier.tcl
 # Log file: /home/pllima0909/Documents/Git/INF01175-Digital-Systems/P08_-_Multiplier_Pipeline/P08_-_Multiplier_Pipeline.runs/Multiplier_synth_1/Multiplier.vds
 # Journal file: /home/pllima0909/Documents/Git/INF01175-Digital-Systems/P08_-_Multiplier_Pipeline/P08_-_Multiplier_Pipeline.runs/Multiplier_synth_1/vivado.jou
-# Running On: PLLima, OS: Linux, CPU Frequency: 1419.051 MHz, CPU Physical cores: 16, Host memory: 16106 MB
+# Running On: PLLima, OS: Linux, CPU Frequency: 1260.916 MHz, CPU Physical cores: 16, Host memory: 16106 MB
 #-----------------------------------------------------------
 source Multiplier.tcl -notrace
-create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1320.344 ; gain = 0.023 ; free physical = 5689 ; free virtual = 11828
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1319.930 ; gain = 0.023 ; free physical = 7030 ; free virtual = 12989
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: Multiplier
 Command: synth_design -top Multiplier -part xc7a12tcpg238-3 -incremental_mode off -mode out_of_context
 Starting synth_design
@@ -21,9 +21,9 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a12t
 INFO: [Device 21-403] Loading part xc7a12tcpg238-3
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 10959
+INFO: [Synth 8-7075] Helper process launched with PID 10084
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2012.066 ; gain = 403.629 ; free physical = 4649 ; free virtual = 10858
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2012.684 ; gain = 404.629 ; free physical = 6059 ; free virtual = 12048
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'Multiplier' [/home/pllima0909/Documents/Git/INF01175-Digital-Systems/P08_-_Multiplier_Pipeline/P08_-_Multiplier_Pipeline.gen/sources_1/ip/Multiplier/synth/Multiplier.vhd:68]
 WARNING: [Synth 8-5640] Port 'zero_detect' is missing in component declaration [/home/pllima0909/Documents/Git/INF01175-Digital-Systems/P08_-_Multiplier_Pipeline/P08_-_Multiplier_Pipeline.gen/sources_1/ip/Multiplier/synth/Multiplier.vhd:71]
@@ -35,14 +35,14 @@ WARNING: [Synth 8-5640] Port 'pcasc_ext' is missing in component declaration [/h
 	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
 	Parameter C_HAS_CE bound to: 0 - type: integer 
 	Parameter C_HAS_SCLR bound to: 0 - type: integer 
-	Parameter C_LATENCY bound to: 5 - type: integer 
+	Parameter C_LATENCY bound to: 6 - type: integer 
 	Parameter C_A_WIDTH bound to: 32 - type: integer 
 	Parameter C_A_TYPE bound to: 0 - type: integer 
 	Parameter C_B_WIDTH bound to: 32 - type: integer 
 	Parameter C_B_TYPE bound to: 0 - type: integer 
 	Parameter C_OUT_HIGH bound to: 63 - type: integer 
 	Parameter C_OUT_LOW bound to: 0 - type: integer 
-	Parameter C_MULT_TYPE bound to: 0 - type: integer 
+	Parameter C_MULT_TYPE bound to: 1 - type: integer 
 	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
 	Parameter C_CCM_IMP bound to: 0 - type: integer 
 	Parameter C_B_VALUE bound to: 10000001 - type: string 
@@ -51,22 +51,70 @@ WARNING: [Synth 8-5640] Port 'pcasc_ext' is missing in component declaration [/h
 	Parameter C_ROUND_PT bound to: 0 - type: integer 
 INFO: [Synth 8-3491] module 'mult_gen_v12_0_20' declared at '/home/pllima0909/Documents/Git/INF01175-Digital-Systems/P08_-_Multiplier_Pipeline/P08_-_Multiplier_Pipeline.gen/sources_1/ip/Multiplier/hdl/mult_gen_v12_0_vh_rfs.vhd:21510' bound to instance 'U0' of component 'mult_gen_v12_0_20' [/home/pllima0909/Documents/Git/INF01175-Digital-Systems/P08_-_Multiplier_Pipeline/P08_-_Multiplier_Pipeline.gen/sources_1/ip/Multiplier/synth/Multiplier.vhd:120]
 INFO: [Synth 8-256] done synthesizing module 'Multiplier' (0#1) [/home/pllima0909/Documents/Git/INF01175-Digital-Systems/P08_-_Multiplier_Pipeline/P08_-_Multiplier_Pipeline.gen/sources_1/ip/Multiplier/synth/Multiplier.vhd:68]
+WARNING: [Synth 8-7129] Port CLK in module delay_line__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module delay_line__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module delay_line__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module delay_line__parameterized6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module delay_line__parameterized6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module delay_line__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module delay_line__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module delay_line__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module delay_line__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module delay_line__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module delay_line__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module delay_line__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module delay_line__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module delay_line__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module delay_line__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module delay_line__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module delay_line is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module delay_line is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module delay_line is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module delay_line__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module delay_line__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module delay_line__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[24] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[23] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[22] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[21] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[20] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[19] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[18] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[17] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[16] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[15] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[14] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[13] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[12] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[11] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[10] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[9] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[8] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[7] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[6] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[5] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[4] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[3] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[2] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[1] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[0] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRY_IN in module dsp is either unconnected or has no load
 WARNING: [Synth 8-7129] Port CE in module mult_gen_v12_0_20_viv is either unconnected or has no load
 WARNING: [Synth 8-7129] Port SCLR in module mult_gen_v12_0_20_viv is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2133.004 ; gain = 524.566 ; free physical = 4427 ; free virtual = 10695
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2138.652 ; gain = 530.598 ; free physical = 5895 ; free virtual = 11886
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2138.941 ; gain = 530.504 ; free physical = 4424 ; free virtual = 10692
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2153.496 ; gain = 545.441 ; free physical = 5893 ; free virtual = 11885
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2138.941 ; gain = 530.504 ; free physical = 4424 ; free virtual = 10692
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2153.496 ; gain = 545.441 ; free physical = 5893 ; free virtual = 11885
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2144.879 ; gain = 0.000 ; free physical = 4422 ; free virtual = 10689
-INFO: [Netlist 29-17] Analyzing 1600 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2159.434 ; gain = 0.000 ; free physical = 5888 ; free virtual = 11880
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -78,32 +126,31 @@ Parsing XDC File [/home/pllima0909/Documents/Git/INF01175-Digital-Systems/P08_-_
 Finished Parsing XDC File [/home/pllima0909/Documents/Git/INF01175-Digital-Systems/P08_-_Multiplier_Pipeline/P08_-_Multiplier_Pipeline.runs/Multiplier_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2269.723 ; gain = 0.000 ; free physical = 4410 ; free virtual = 10694
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2234.371 ; gain = 0.000 ; free physical = 5866 ; free virtual = 11870
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 528 instances were transformed.
-  MULT_AND => LUT2: 528 instances
+No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2269.758 ; gain = 0.000 ; free physical = 4409 ; free virtual = 10693
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2234.406 ; gain = 0.000 ; free physical = 5865 ; free virtual = 11869
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2269.758 ; gain = 661.320 ; free physical = 4409 ; free virtual = 10690
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2234.406 ; gain = 626.352 ; free physical = 5872 ; free virtual = 11876
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a12tcpg238-3
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2269.758 ; gain = 661.320 ; free physical = 4409 ; free virtual = 10690
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2234.406 ; gain = 626.352 ; free physical = 5872 ; free virtual = 11876
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  /home/pllima0909/Documents/Git/INF01175-Digital-Systems/P08_-_Multiplier_Pipeline/P08_-_Multiplier_Pipeline.runs/Multiplier_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2269.758 ; gain = 661.320 ; free physical = 4409 ; free virtual = 10690
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2234.406 ; gain = 626.352 ; free physical = 5873 ; free virtual = 11877
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2269.758 ; gain = 661.320 ; free physical = 4440 ; free virtual = 10724
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2234.406 ; gain = 626.352 ; free physical = 5871 ; free virtual = 11877
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -127,25 +174,25 @@ WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 WARNING: [Synth 8-7129] Port CE in module mult_gen_v12_0_20_viv is either unconnected or has no load
 WARNING: [Synth 8-7129] Port SCLR in module mult_gen_v12_0_20_viv is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2269.758 ; gain = 661.320 ; free physical = 4435 ; free virtual = 10719
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2234.406 ; gain = 626.352 ; free physical = 5871 ; free virtual = 11877
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2269.758 ; gain = 661.320 ; free physical = 4435 ; free virtual = 10728
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2234.406 ; gain = 626.352 ; free physical = 5867 ; free virtual = 11879
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2269.758 ; gain = 661.320 ; free physical = 4435 ; free virtual = 10728
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2234.406 ; gain = 626.352 ; free physical = 5867 ; free virtual = 11879
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2269.758 ; gain = 661.320 ; free physical = 4438 ; free virtual = 10727
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2234.406 ; gain = 626.352 ; free physical = 5867 ; free virtual = 11879
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -163,41 +210,52 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2269.758 ; gain = 661.320 ; free physical = 4437 ; free virtual = 10727
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2234.406 ; gain = 626.352 ; free physical = 5870 ; free virtual = 11883
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2269.758 ; gain = 661.320 ; free physical = 4437 ; free virtual = 10727
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2234.406 ; gain = 626.352 ; free physical = 5870 ; free virtual = 11883
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 2269.758 ; gain = 661.320 ; free physical = 4437 ; free virtual = 10727
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2234.406 ; gain = 626.352 ; free physical = 5870 ; free virtual = 11883
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 2269.758 ; gain = 661.320 ; free physical = 4437 ; free virtual = 10727
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2234.406 ; gain = 626.352 ; free physical = 5870 ; free virtual = 11883
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 2269.758 ; gain = 661.320 ; free physical = 4437 ; free virtual = 10727
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2234.406 ; gain = 626.352 ; free physical = 5870 ; free virtual = 11883
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 2269.758 ; gain = 661.320 ; free physical = 4437 ; free virtual = 10727
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2234.406 ; gain = 626.352 ; free physical = 5870 ; free virtual = 11883
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
 ---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping            | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|dsp         | (C+(A'*B')')'          | 17     | 17     | 0      | -      | 17     | 1    | 1    | 1    | -    | -     | 1    | 1    | 
+|dsp         | (PCIN>>17+(A'*B'')')'  | 0      | 18     | -      | -      | 0      | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp         | (PCIN+((A'')'*B'')')'  | 25     | 17     | -      | -      | 17     | 2    | 2    | -    | -    | 1     | 1    | 1    | 
+|dsp         | (PCIN>>17+(A''*B'')')' | 0      | 18     | -      | -      | 43     | 2    | 2    | -    | -    | -     | 1    | 1    | 
++------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
 
 Report BlackBoxes: 
 +-+--------------+----------+
@@ -206,51 +264,41 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+---------+------+
-|      |Cell     |Count |
-+------+---------+------+
-|1     |CARRY4   |   144|
-|2     |LUT1     |    16|
-|3     |LUT2     |   560|
-|4     |LUT3     |    32|
-|5     |LUT4     |   496|
-|6     |MULT_AND |   528|
-|7     |MUXCY    |   528|
-|8     |SRL16E   |     6|
-|9     |XORCY    |   544|
-|10    |FDRE     |  1143|
-+------+---------+------+
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |DSP48E1 |     4|
+|5     |SRL16E  |    32|
+|6     |FDRE    |    66|
++------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 2269.758 ; gain = 661.320 ; free physical = 4437 ; free virtual = 10727
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2234.406 ; gain = 626.352 ; free physical = 5870 ; free virtual = 11883
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2269.758 ; gain = 530.504 ; free physical = 4436 ; free virtual = 10726
-Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2269.758 ; gain = 661.320 ; free physical = 4436 ; free virtual = 10726
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2234.406 ; gain = 545.441 ; free physical = 5870 ; free virtual = 11883
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2234.406 ; gain = 626.352 ; free physical = 5870 ; free virtual = 11883
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2269.758 ; gain = 0.000 ; free physical = 4717 ; free virtual = 11007
-INFO: [Netlist 29-17] Analyzing 1744 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2234.406 ; gain = 0.000 ; free physical = 5869 ; free virtual = 11883
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-WARNING: [Netlist 29-101] Netlist 'Multiplier' is not ideal for floorplanning, since the cellview 'luts' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2269.758 ; gain = 0.000 ; free physical = 4723 ; free virtual = 11016
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2234.406 ; gain = 0.000 ; free physical = 6151 ; free virtual = 12167
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 672 instances were transformed.
-  (MUXCY,XORCY) => CARRY4: 144 instances
-  MULT_AND => LUT2: 528 instances
+No Unisim elements were transformed.
 
-Synth Design complete | Checksum: 90d15be
+Synth Design complete | Checksum: 4590d21f
 INFO: [Common 17-83] Releasing license: Synthesis
-21 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+21 Infos, 56 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:29 . Memory (MB): peak = 2269.758 ; gain = 949.414 ; free physical = 4722 ; free virtual = 11015
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1825.354; main = 1500.584; forked = 375.595
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3212.145; main = 2237.711; forked = 974.434
-Write ShapeDB Complete: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2269.758 ; gain = 0.000 ; free physical = 4722 ; free virtual = 11015
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:25 . Memory (MB): peak = 2234.406 ; gain = 914.477 ; free physical = 6150 ; free virtual = 12166
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1843.013; main = 1515.839; forked = 375.543
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3176.793; main = 2202.359; forked = 974.434
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2234.406 ; gain = 0.000 ; free physical = 6150 ; free virtual = 12166
 INFO: [Common 17-1381] The checkpoint '/home/pllima0909/Documents/Git/INF01175-Digital-Systems/P08_-_Multiplier_Pipeline/P08_-_Multiplier_Pipeline.runs/Multiplier_synth_1/Multiplier.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP Multiplier, cache-ID = af54168e22066d6b
-INFO: [Coretcl 2-1174] Renamed 3 cell refs.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2293.734 ; gain = 0.000 ; free physical = 4720 ; free virtual = 11018
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP Multiplier, cache-ID = 5e1031581f7385aa
+INFO: [Coretcl 2-1174] Renamed 7 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2258.383 ; gain = 0.000 ; free physical = 6159 ; free virtual = 12176
 INFO: [Common 17-1381] The checkpoint '/home/pllima0909/Documents/Git/INF01175-Digital-Systems/P08_-_Multiplier_Pipeline/P08_-_Multiplier_Pipeline.runs/Multiplier_synth_1/Multiplier.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Multiplier_utilization_synth.rpt -pb Multiplier_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Jul  9 11:46:29 2024...
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 11 10:51:22 2024...

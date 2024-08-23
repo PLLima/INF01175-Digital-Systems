@@ -1,0 +1,5 @@
+\babel@toc {brazilian}{}\relax 
+\beamer@sectionintoc {1}{Enunciado do Problema}{3}{0}{1}
+\beamer@sectionintoc {2}{Resolução PC-PO}{5}{0}{2}
+\beamer@sectionintoc {3}{Resolução HLS}{6}{0}{3}
+\beamer@subsectionintoc {3}{1}{Programa em C}{6}{0}{3}

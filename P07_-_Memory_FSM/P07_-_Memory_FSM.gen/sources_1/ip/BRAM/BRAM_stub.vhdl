@@ -2,10 +2,10 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.2.2 (lin64) Build 4126759 Thu Feb  8 23:52:05 MST 2024
--- Date        : Thu Jul  4 10:51:15 2024
+-- Date        : Thu Jul  4 10:51:14 2024
 -- Host        : PLLima running 64-bit Ubuntu 22.04.4 LTS
--- Command     : write_vhdl -force -mode synth_stub
---               /home/pllima0909/Documents/Git/INF01175-Digital-Systems/P07_-_Memory_FSM/P07_-_Memory_FSM.gen/sources_1/ip/BRAM/BRAM_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top BRAM -prefix
+--               BRAM_ BRAM_stub.vhdl
 -- Design      : BRAM
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7a12tcpg238-3

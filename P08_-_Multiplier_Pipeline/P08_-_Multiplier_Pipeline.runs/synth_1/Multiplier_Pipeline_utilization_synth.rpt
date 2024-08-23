@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2.2 (lin64) Build 4126759 Thu Feb  8 23:52:05 MST 2024
-| Date         : Tue Jul  9 11:47:05 2024
+| Date         : Thu Jul 11 10:52:22 2024
 | Host         : PLLima running 64-bit Ubuntu 22.04.4 LTS
 | Command      : report_utilization -file Multiplier_Pipeline_utilization_synth.rpt -pb Multiplier_Pipeline_utilization_synth.pb
 | Design       : Multiplier_Pipeline

@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a12tcpg238-3" LaunchTime="1714057647" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/FSM1.dcp">
-  <File Type="VDS-TIMING-PB" Name="FSM2_timing_summary_synth.pb"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="FSM2_timing_summary_synth.rpt"/>
-  <File Type="RDS-DCP" Name="FSM2.dcp"/>
-  <File Type="RDS-UTIL-PB" Name="FSM2_utilization_synth.pb"/>
-  <File Type="RDS-UTIL" Name="FSM2_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="FSM2_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="FSM2.vds"/>
   <File Type="REPORTS-TCL" Name="FSM2_reports.tcl"/>
   <File Type="PA-TCL" Name="FSM2.tcl"/>
+  <File Type="RDS-DCP" Name="FSM2.dcp"/>
+  <File Type="RDS-UTIL" Name="FSM2_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="FSM2_utilization_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/FSM2.vhd">
@@ -50,9 +47,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

@@ -2,7 +2,7 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.2.2 (lin64) Build 4126759 Thu Feb  8 23:52:05 MST 2024
-// Date        : Tue Jul  9 11:46:29 2024
+// Date        : Thu Jul 11 10:51:21 2024
 // Host        : PLLima running 64-bit Ubuntu 22.04.4 LTS
 // Command     : write_verilog -force -mode synth_stub
 //               /home/pllima0909/Documents/Git/INF01175-Digital-Systems/P08_-_Multiplier_Pipeline/P08_-_Multiplier_Pipeline.gen/sources_1/ip/Multiplier/Multiplier_stub.v

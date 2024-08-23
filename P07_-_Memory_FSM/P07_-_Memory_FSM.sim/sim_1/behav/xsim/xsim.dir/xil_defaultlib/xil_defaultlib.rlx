@@ -2,7 +2,7 @@
 2020.2
 Feb  8 2024
 23:58:30
-/home/pllima0909/Documents/Git/INF01175-Digital-Systems/P07_-_Memory_FSM/P07_-_Memory_FSM.gen/sources_1/ip/BRAM/sim/BRAM.v,1719930480,verilog,,,,BRAM,,,,,,,,
+/home/pllima0909/Documents/Git/INF01175-Digital-Systems/P07_-_Memory_FSM/P07_-_Memory_FSM.gen/sources_1/ip/BRAM/sim/BRAM.v,1722187004,verilog,,,,BRAM,,,,,,,,
 /home/pllima0909/Documents/Git/INF01175-Digital-Systems/P07_-_Memory_FSM/P07_-_Memory_FSM.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
 /home/pllima0909/Documents/Git/INF01175-Digital-Systems/P07_-_Memory_FSM/P07_-_Memory_FSM.srcs/sim_1/new/Test_Memory_FSM.vhd,1720113636,vhdl,,,,cfg_tb_memory_fsm;tb_memory_fsm,,,,,,,,
 /home/pllima0909/Documents/Git/INF01175-Digital-Systems/P07_-_Memory_FSM/P07_-_Memory_FSM.srcs/sources_1/new/Memory_FSM.vhd,1720113311,vhdl,,,,memory_fsm,,,,,,,,

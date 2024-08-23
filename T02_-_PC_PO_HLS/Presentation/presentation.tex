@@ -1,0 +1,163 @@
+\documentclass{beamer}
+\usetheme{Madrid}
+\usecolortheme{seahorse}
+
+% Language setting
+\usepackage[main=brazilian, english]{babel}
+
+\usepackage{tcolorbox}
+\usepackage{listings}
+\usepackage{tikz}
+
+\setbeamerfont{title}{series=\bfseries}
+\setbeamerfont{subtitle}{series=\normalfont}
+\defbeamertemplate*{title page}{customized}[1][]
+{
+    \vbox{}
+    \vfill
+    \begingroup
+        \centering
+        \usebeamertemplate{titlegraphic}
+        \inserttitlegraphic
+        \par
+        
+        \vskip 0.15cm
+
+        \usebeamerfont{institute}
+        \insertinstitute
+        \par
+
+        \vskip 0.75cm
+
+        \begin{tcolorbox}[colframe=darkgray, colback=lightgray]
+
+            \centering
+            \usebeamerfont{title}
+            \inserttitle
+            \par
+
+            \usebeamerfont{subtitle}
+            \insertsubtitle
+            \par
+
+        \end{tcolorbox}
+
+        \vskip 0.75cm
+
+        \usebeamerfont{author}
+        \insertauthor
+        \par
+        \usebeamerfont{author}
+        Turma U
+        \par
+
+        \vskip 0.75cm
+
+        \usebeamerfont{date}
+        \insertdate
+        \par
+
+    \endgroup
+    \vfill
+}
+
+\titlegraphic
+{
+    \includegraphics[width=0.2\linewidth]{images/logos/UFRGS.png}
+    \hspace{0.5cm}
+    \includegraphics[width=0.2\linewidth]{images/logos/INF.png}        
+}
+\title[Projeto PC-PO/HLS]{Projeto PC-PO/HLS}
+\subtitle{Operações com Matrizes 2x2}
+\author[Pedro Lubaszewski Lima]{Pedro Lubaszewski Lima (00341810)}
+\institute[]{INF01175\\Sistemas Digitais para Computadores A}
+\date[\today]{\today}
+
+\renewcommand{\lstlistingname}{Código}
+
+\begin{document}
+
+    \begin{frame}
+        \maketitle
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Sumário}
+        \tableofcontents
+    \end{frame}
+
+    \section{Enunciado do Problema}
+    \begin{frame}
+        \frametitle{Enunciado do Problema}
+
+        \begin{block}<1->
+            {Objetivo}
+            Projetar e descrever em VHDL um
+            circuito que multiplique duas matrizes,
+            some com uma terceira matriz e filtre a
+            matriz resultado de acordo com a definição
+            do cálculo abaixo. Além disso, compararar
+            a construção manual com a solução HLS da
+            Vitis.
+        \end{block}
+
+        \begin{block}<2->
+            {Função da Saída do Sistema $ (R_{2x2}) $}
+            Dadas as matrizes $ A_{2x2} $, $ B_{2x2} $
+            e $ C_{2x2} $ tais que $ a_{ij} $, $ b_{ij} $,
+            $ c_{ij} \in \mathbb{N} $ e $ a_{ij} < 255 $,
+            $ b_{ij} < 255 $, $ c_{ij} < 65535 $, $ \forall i $,
+            $ j \in \{ 1,2 \}$, e 
+
+            $$ F(M) = 
+                \begin{cases}
+                    m_{ij} & \text{se } 0 < m_{ij} \leqslant 128 \\
+                    128 & \text{se } m_{ij} > 128
+                \end{cases}
+                \text{ , então}
+            $$
+
+            $$ R = F[(A \times B) + C] $$
+        \end{block}
+    \end{frame}
+
+    \section{Resolução PC-PO}
+    \begin{frame}
+        \frametitle{Fluxograma ASM}
+    \end{frame}
+
+    \section{Resolução HLS}
+    \subsection{Programa em C}
+    \begin{frame}
+        \frametitle{Algoritmo em C}
+
+        \lstinputlisting
+        [caption= \textit{Header} de \texttt{matrix\_operations.cpp},
+        captionpos=b,
+        basicstyle=\tiny,
+        numbers=left,
+        columns=flexible,
+        xleftmargin=26pt,
+        frame=single,
+        framexleftmargin=22pt,
+        language=C++]
+        {./code/matrix_operations.h}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Algoritmo em C}
+
+        \lstinputlisting
+        [caption= Implementação de \texttt{matrix\_operations.h},
+        captionpos=b,
+        basicstyle=\tiny,
+        numbers=left,
+        columns=flexible,
+        xleftmargin=26pt,
+        frame=single,
+        framexleftmargin=22pt,
+        language=C++]
+        {./code/matrix_operations.cpp}
+    \end{frame}
+
+\end{document}
