@@ -108,9 +108,9 @@
             circuito que multiplique duas matrizes,
             some com uma terceira matriz e filtre a
             matriz resultado de acordo com a definição
-            do cálculo abaixo. Além disso, compararar
-            a construção manual com a solução HLS da
-            Vitis.
+            do cálculo abaixo. Além disso, comparar
+            a construção manual com a solução HLS do
+            Xilinx Vitis HLS.
         \end{block}
 
         \begin{block}<2->
@@ -136,6 +136,65 @@
     \section{Resolução PC-PO}
     \begin{frame}
         \frametitle{Fluxograma ASM}
+    \end{frame}
+
+    \subsection{Validações da Solução}
+    \begin{frame}
+        \frametitle{Propostas de Testes}
+
+        \begingroup \onslide<1->
+        Para testar a solução, foram criadas as seguintes entradas:
+
+        \begin{itemize}
+            \item $ A = \begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix} $;
+            \item $ B = \begin{bmatrix} 4 & 3 \\ 2 & 1 \end{bmatrix} $;
+            \item $ B_{NULL} = \begin{bmatrix} 0 & 0 \\ 0 & 0 \end{bmatrix} $;
+            \item $ C = \begin{bmatrix} 121 & 10 \\ 50 & 3 \end{bmatrix} $.
+        \end{itemize}
+        \endgroup
+
+        \begingroup \onslide<2->
+        Esperando as seguintes saídas:
+        \begin{itemize} \onslide<2->
+            \item $ R_1 = \begin{bmatrix} 128 & 15 \\ 70 & 16 \end{bmatrix} $,
+                  com $ A $, $ B $ e $ C $ como entradas;
+            \item $ R_2 = \begin{bmatrix} 121 & 10 \\ 50 & 3 \end{bmatrix} $,
+                  com $ A $, $ B_{NULL} $ e $ C $ como entradas.
+        \end{itemize}
+        \endgroup
+
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Simulação para Validação de $ R_1 $}
+
+        \begingroup \onslide<2->
+            Como a saída $ doutr = [128, 15, 70, 16] $, 
+            no modo da memória \textit{read first}, então
+            foi validado que $ R_1 = \begin{bmatrix} 128 & 15 \\ 70 & 16 \end{bmatrix} $.
+        \endgroup
+
+        \begin{figure}[h] \onslide<1->
+            \centering
+            \includegraphics[width=0.77\linewidth]{./images/solutions/PC-PO-Sim1.png}
+            \caption{\label{img:pc-po-simulation-1} Forma de Onda Funcional com entradas $ A $, $ B $ e $ C $}
+          \end{figure}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Simulação para Validação de $ R_2 $}
+
+        \begingroup \onslide<2->
+            Como a saída $ doutr = [121, 10, 50, 3] $, 
+            no modo da memória \textit{read first}, então
+            foi validado que $ R_2 = \begin{bmatrix} 121 & 10 \\ 50 & 3 \end{bmatrix} $.
+        \endgroup
+
+        \begin{figure}[h] \onslide<1->
+            \centering
+            \includegraphics[width=0.77\linewidth]{./images/solutions/PC-PO-Sim2.png}
+            \caption{\label{img:pc-po-simulation-2} Forma de Onda Funcional com entradas $ A $, $ B_{NULL} $ e $ C $}
+          \end{figure}
     \end{frame}
 
     \section{Resolução HLS}
