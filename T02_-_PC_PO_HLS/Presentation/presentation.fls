@@ -1417,6 +1417,11 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmssi10.tfm
+OUTPUT presentation.vrb
+INPUT ./presentation.vrb
+INPUT presentation.vrb
+INPUT ./presentation.vrb
+INPUT presentation.vrb
 INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
@@ -1437,6 +1442,11 @@ INPUT ./code/matrix_operations.h
 INPUT ./code/matrix_operations.h
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
+OUTPUT presentation.vrb
+INPUT ./presentation.vrb
+INPUT presentation.vrb
+INPUT ./presentation.vrb
+INPUT presentation.vrb
 INPUT ./code/matrix_operations.cpp
 INPUT ./code/matrix_operations.cpp
 INPUT ./code/matrix_operations.cpp

@@ -1,0 +1,5 @@
+<pragmas>
+<pragma file="HLS_src/matrix_operations.cpp" line="10" pragmaType="unroll" parentfunction="calculate_matrix" factor="-1" skip_exit_check="0"/>
+<pragma file="HLS_src/matrix_operations.cpp" line="9" pragmaType="unroll" parentfunction="calculate_matrix" factor="-1" skip_exit_check="0"/>
+<pragma file="HLS_src/matrix_operations.cpp" line="8" pragmaType="unroll" parentfunction="calculate_matrix" factor="-1" skip_exit_check="0"/>
+</pragmas>

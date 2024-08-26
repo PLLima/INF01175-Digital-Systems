@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.23)  23 AUG 2024 13:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.23)  24 AUG 2024 18:59
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -808,7 +808,10 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ] [5
 
-] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+]
+\openout4 = `presentation.vrb'.
+
+ (./presentation.vrb (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 ) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
@@ -823,9 +826,12 @@ LaTeX Font Warning: Font shape `OML/cmss/m/n' undefined
 (Font)              using `OML/cmm/m/it' instead
 (Font)              for symbol `textless' on input line 4.
 
-) [6
+)) [6
 
-] (./code/matrix_operations.cpp
+]
+\openout4 = `presentation.vrb'.
+
+ (./presentation.vrb (./code/matrix_operations.cpp
 LaTeX Font Info:    Trying to load font information for OMS+cmss on input line 8.
 LaTeX Font Info:    No file OMScmss.fd. on input line 8.
 
@@ -837,7 +843,7 @@ LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 18.
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmss.fd
 File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)) [7
+))) [7
 
 ]
 \tf@nav=\write6
@@ -857,15 +863,15 @@ Package rerunfilecheck Info: File `presentation.out' has not changed.
 (rerunfilecheck)             Checksum: 2D3352947D9E62017BB1B4A84C65E547;526.
  ) 
 Here is how much of TeX's memory you used:
- 29312 strings out of 480154
- 585835 string characters out of 5893788
- 1063127 words of memory out of 5000000
- 46684 multiletter control sequences out of 15000+600000
+ 29320 strings out of 480154
+ 585969 string characters out of 5893788
+ 1057121 words of memory out of 5000000
+ 46687 multiletter control sequences out of 15000+600000
  479184 words of font info for 64 fonts, out of 8000000 for 9000
  61 hyphenation exceptions out of 8191
- 99i,15n,104p,494b,1583s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 99i,15n,104p,494b,1608s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/pllima0909/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcss0600.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on presentation.pdf (7 pages, 263936 bytes).
+Output written on presentation.pdf (7 pages, 264242 bytes).
 PDF statistics:
  363 PDF objects out of 1000 (max. 8388607)
  284 compressed objects within 3 object streams

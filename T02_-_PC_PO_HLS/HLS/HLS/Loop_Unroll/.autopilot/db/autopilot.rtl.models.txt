@@ -1,0 +1,3 @@
+calculate_matrix_mul_8ns_8ns_16_1_1
+calculate_matrix_mac_muladd_8ns_8ns_16ns_16_4_1
+calculate_matrix

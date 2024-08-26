@@ -1,0 +1,28 @@
+/home/pllima0909/Documents/Git/INF01175-Digital-Systems/T02_-_PC_PO_HLS/HLS/HLS/Unroll_and_Array_Partition/directives.tcl:11:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=calculate_matrix_XLX_SEP_ PragmaOptions=complete dim=0 variable=a_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE ARRAY_PARTITION complete dim=0 variable=a
+        ^
+/home/pllima0909/Documents/Git/INF01175-Digital-Systems/T02_-_PC_PO_HLS/HLS/HLS/Unroll_and_Array_Partition/directives.tcl:12:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=calculate_matrix_XLX_SEP_ PragmaOptions=complete dim=0 variable=b_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE ARRAY_PARTITION complete dim=0 variable=b
+        ^
+/home/pllima0909/Documents/Git/INF01175-Digital-Systems/T02_-_PC_PO_HLS/HLS/HLS/Unroll_and_Array_Partition/directives.tcl:13:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=calculate_matrix_XLX_SEP_ PragmaOptions=complete dim=0 variable=c_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE ARRAY_PARTITION complete dim=0 variable=c
+        ^
+/home/pllima0909/Documents/Git/INF01175-Digital-Systems/T02_-_PC_PO_HLS/HLS/HLS/Unroll_and_Array_Partition/directives.tcl:14:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=calculate_matrix_XLX_SEP_ PragmaOptions=complete dim=0 variable=result_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE ARRAY_PARTITION complete dim=0 variable=result
+        ^
+/home/pllima0909/Documents/Git/INF01175-Digital-Systems/T02_-_PC_PO_HLS/HLS/HLS/Unroll_and_Array_Partition/csynth.tcl:16:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=calculate_matrix_XLX_SEP_ PragmaOptions=name=calculate_matrix_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=calculate_matrix
+        ^
+/home/pllima0909/Documents/Git/INF01175-Digital-Systems/T02_-_PC_PO_HLS/HLS/HLS/Unroll_and_Array_Partition/directives.tcl:7:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=calculate_matrix_XLX_SEP_ PragmaOptions=name=calculate_matrix_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=calculate_matrix
+        ^
+/home/pllima0909/Documents/Git/INF01175-Digital-Systems/T02_-_PC_PO_HLS/HLS/HLS/Unroll_and_Array_Partition/directives.tcl:10:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=calculate_matrix_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE UNROLL
+        ^
+/home/pllima0909/Documents/Git/INF01175-Digital-Systems/T02_-_PC_PO_HLS/HLS/HLS/Unroll_and_Array_Partition/directives.tcl:9:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=calculate_matrix_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE UNROLL
+        ^
+/home/pllima0909/Documents/Git/INF01175-Digital-Systems/T02_-_PC_PO_HLS/HLS/HLS/Unroll_and_Array_Partition/directives.tcl:8:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=calculate_matrix_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE UNROLL
+        ^
+9 warnings generated.

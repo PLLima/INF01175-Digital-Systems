@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1724429080 "/home/pllima0909/Documents/Git/INF01175-Digital-Systems/T02_-_PC_PO_HLS/Presentation/presentation.tex" "presentation.pdf" "presentation" 1724429081
+["pdflatex"] 1724536755 "/home/pllima0909/Documents/Git/INF01175-Digital-Systems/T02_-_PC_PO_HLS/Presentation/presentation.tex" "presentation.pdf" "presentation" 1724536756
   "/etc/texmf/web2c/texmf.cnf" 1724414525 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/pllima0909/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcss0600.600pk" 1724426120 6604 4e2e53ac3f0d39e4db24668ed63291a9 ""
-  "/home/pllima0909/Documents/Git/INF01175-Digital-Systems/T02_-_PC_PO_HLS/Presentation/presentation.tex" 1724429078 3920 ec3bb9ebebfe569c33471c61ad3e273e ""
+  "/home/pllima0909/Documents/Git/INF01175-Digital-Systems/T02_-_PC_PO_HLS/Presentation/presentation.tex" 1724536753 3972 c8de764a65ab2fab94fc06dbf0cde214 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcss0600.tfm" 1136768653 1536 d1b127de7ce318d6eac2b01aea48d7ed ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -233,15 +233,16 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1724414531 165012 f177baa1c39a3ebd62c3096a43521a0d ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1724417424 1436680 5fa7bf0777ce16f72a9e0fce371fb954 ""
-  "code/matrix_operations.cpp" 1724363804 759 9900aca898c5682131e1b29cc877425a ""
+  "code/matrix_operations.cpp" 1724525038 690 a5f3ec029b4484461d6907cd7eed4925 ""
   "code/matrix_operations.h" 1724361834 612 29d13b77d2869d3c805a2dc6c7b0f1c6 ""
   "images/logos/INF.png" 1724417694 15010 1abd8f9e244e530d3a1ab0c922b4a613 ""
   "images/logos/UFRGS.png" 1724417696 88725 6440c8a13158bb4b7d2155d90ff2ae99 ""
-  "presentation.aux" 1724429081 3251 840a6ca00fa567cda7dc299328537e57 "pdflatex"
-  "presentation.nav" 1724429081 1388 062d343c4a1fcf2247d2aed6894f22c3 "pdflatex"
-  "presentation.out" 1724429081 526 2d3352947d9e62017bb1b4a84c65e547 "pdflatex"
-  "presentation.tex" 1724429078 3920 ec3bb9ebebfe569c33471c61ad3e273e ""
-  "presentation.toc" 1724429081 248 5061577274c3025d3e7e0251e2506470 "pdflatex"
+  "presentation.aux" 1724536756 3251 840a6ca00fa567cda7dc299328537e57 "pdflatex"
+  "presentation.nav" 1724536756 1388 062d343c4a1fcf2247d2aed6894f22c3 "pdflatex"
+  "presentation.out" 1724536756 526 2d3352947d9e62017bb1b4a84c65e547 "pdflatex"
+  "presentation.tex" 1724536753 3972 c8de764a65ab2fab94fc06dbf0cde214 ""
+  "presentation.toc" 1724536756 248 5061577274c3025d3e7e0251e2506470 "pdflatex"
+  "presentation.vrb" 1724536756 358 5723f14ee136c803cdb09d6e34b52091 "pdflatex"
   (generated)
   "presentation.aux"
   "presentation.log"
@@ -250,3 +251,4 @@
   "presentation.pdf"
   "presentation.snm"
   "presentation.toc"
+  "presentation.vrb"

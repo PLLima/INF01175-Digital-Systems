@@ -1,0 +1,187 @@
+
+
+================================================================
+== Vitis HLS Report for 'calculate_matrix'
+================================================================
+* Date:           Mon Aug 26 02:30:43 2024
+
+* Version:        2023.2.2 (Build 4101106 on Feb  9 2024)
+* Project:        HLS
+* Solution:       Loop_Unroll (Vivado IP Flow Target)
+* Product family: artix7l
+* Target device:  xc7a75tl-ftg256-2L
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  15.00 ns|  8.271 ns|     4.05 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        5|        5|  75.000 ns|  75.000 ns|    6|    6|       no|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+-------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF  |  LUT  | URAM|
++-----------------+---------+-----+-------+-------+-----+
+|DSP              |        -|    4|      -|      -|    -|
+|Expression       |        -|    -|      0|    220|    -|
+|FIFO             |        -|    -|      -|      -|    -|
+|Instance         |        -|    0|      0|    164|    -|
+|Memory           |        -|    -|      -|      -|    -|
+|Multiplexer      |        -|    -|      -|    159|    -|
+|Register         |        -|    -|     38|      -|    -|
++-----------------+---------+-----+-------+-------+-----+
+|Total            |        0|    4|     38|    543|    0|
++-----------------+---------+-----+-------+-------+-----+
+|Available        |      210|  180|  94400|  47200|    0|
++-----------------+---------+-----+-------+-------+-----+
+|Utilization (%)  |        0|    2|     ~0|      1|    0|
++-----------------+---------+-----+-------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +-----------------------+--------------------+---------+----+---+----+-----+
+    |        Instance       |       Module       | BRAM_18K| DSP| FF| LUT| URAM|
+    +-----------------------+--------------------+---------+----+---+----+-----+
+    |mul_8ns_8ns_16_1_1_U1  |mul_8ns_8ns_16_1_1  |        0|   0|  0|  41|    0|
+    |mul_8ns_8ns_16_1_1_U2  |mul_8ns_8ns_16_1_1  |        0|   0|  0|  41|    0|
+    |mul_8ns_8ns_16_1_1_U3  |mul_8ns_8ns_16_1_1  |        0|   0|  0|  41|    0|
+    |mul_8ns_8ns_16_1_1_U4  |mul_8ns_8ns_16_1_1  |        0|   0|  0|  41|    0|
+    +-----------------------+--------------------+---------+----+---+----+-----+
+    |Total                  |                    |        0|   0|  0| 164|    0|
+    +-----------------------+--------------------+---------+----+---+----+-----+
+
+    * DSP: 
+    +-----------------------------------+--------------------------------+--------------+
+    |              Instance             |             Module             |  Expression  |
+    +-----------------------------------+--------------------------------+--------------+
+    |mac_muladd_8ns_8ns_16ns_16_4_1_U5  |mac_muladd_8ns_8ns_16ns_16_4_1  |  i0 + i1 * i2|
+    |mac_muladd_8ns_8ns_16ns_16_4_1_U6  |mac_muladd_8ns_8ns_16ns_16_4_1  |  i0 + i1 * i2|
+    |mac_muladd_8ns_8ns_16ns_16_4_1_U7  |mac_muladd_8ns_8ns_16ns_16_4_1  |  i0 + i1 * i2|
+    |mac_muladd_8ns_8ns_16ns_16_4_1_U8  |mac_muladd_8ns_8ns_16ns_16_4_1  |  i0 + i1 * i2|
+    +-----------------------------------+--------------------------------+--------------+
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +--------------------------+----------+----+---+----+------------+------------+
+    |       Variable Name      | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------------+----------+----+---+----+------------+------------+
+    |intermediate_1_fu_272_p2  |         +|   0|  0|  23|          16|          16|
+    |intermediate_3_fu_296_p2  |         +|   0|  0|  23|          16|          16|
+    |intermediate_5_fu_320_p2  |         +|   0|  0|  23|          16|          16|
+    |intermediate_7_fu_344_p2  |         +|   0|  0|  23|          16|          16|
+    |icmp_ln22_1_fu_301_p2     |      icmp|   0|  0|  23|          16|           8|
+    |icmp_ln22_2_fu_325_p2     |      icmp|   0|  0|  23|          16|           8|
+    |icmp_ln22_3_fu_349_p2     |      icmp|   0|  0|  23|          16|           8|
+    |icmp_ln22_fu_277_p2       |      icmp|   0|  0|  23|          16|           8|
+    |select_ln25_1_fu_311_p3   |    select|   0|  0|   9|           1|           9|
+    |select_ln25_2_fu_335_p3   |    select|   0|  0|   9|           1|           9|
+    |select_ln25_3_fu_359_p3   |    select|   0|  0|   9|           1|           9|
+    |select_ln25_fu_287_p3     |    select|   0|  0|   9|           1|           9|
+    +--------------------------+----------+----+---+----+------------+------------+
+    |Total                     |          |   0|  0| 220|         132|         132|
+    +--------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------+----+-----------+-----+-----------+
+    |       Name      | LUT| Input Size| Bits| Total Bits|
+    +-----------------+----+-----------+-----+-----------+
+    |a_address0       |  13|          3|    2|          6|
+    |a_address1       |  13|          3|    2|          6|
+    |ap_NS_fsm        |  29|          7|    1|          7|
+    |b_address0       |  13|          3|    2|          6|
+    |b_address1       |  13|          3|    2|          6|
+    |c_address0       |  13|          3|    2|          6|
+    |c_address1       |  13|          3|    2|          6|
+    |result_address0  |  13|          3|    2|          6|
+    |result_address1  |  13|          3|    2|          6|
+    |result_d0        |  13|          3|    8|         24|
+    |result_d1        |  13|          3|    8|         24|
+    +-----------------+----+-----------+-----+-----------+
+    |Total            | 159|         37|   33|        103|
+    +-----------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +--------------------+----+----+-----+-----------+
+    |        Name        | FF | LUT| Bits| Const Bits|
+    +--------------------+----+----+-----+-----------+
+    |add_ln20_4_reg_506  |  16|   0|   16|          0|
+    |add_ln20_6_reg_511  |  16|   0|   16|          0|
+    |ap_CS_fsm           |   6|   0|    6|          0|
+    +--------------------+----+----+-----+-----------+
+    |Total               |  38|   0|   38|          0|
+    +--------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------+-----+-----+------------+------------------+--------------+
+|    RTL Ports    | Dir | Bits|  Protocol  |   Source Object  |    C Type    |
++-----------------+-----+-----+------------+------------------+--------------+
+|ap_clk           |   in|    1|  ap_ctrl_hs|  calculate_matrix|  return value|
+|ap_rst           |   in|    1|  ap_ctrl_hs|  calculate_matrix|  return value|
+|ap_start         |   in|    1|  ap_ctrl_hs|  calculate_matrix|  return value|
+|ap_done          |  out|    1|  ap_ctrl_hs|  calculate_matrix|  return value|
+|ap_idle          |  out|    1|  ap_ctrl_hs|  calculate_matrix|  return value|
+|ap_ready         |  out|    1|  ap_ctrl_hs|  calculate_matrix|  return value|
+|a_address0       |  out|    2|   ap_memory|                 a|         array|
+|a_ce0            |  out|    1|   ap_memory|                 a|         array|
+|a_q0             |   in|    8|   ap_memory|                 a|         array|
+|a_address1       |  out|    2|   ap_memory|                 a|         array|
+|a_ce1            |  out|    1|   ap_memory|                 a|         array|
+|a_q1             |   in|    8|   ap_memory|                 a|         array|
+|b_address0       |  out|    2|   ap_memory|                 b|         array|
+|b_ce0            |  out|    1|   ap_memory|                 b|         array|
+|b_q0             |   in|    8|   ap_memory|                 b|         array|
+|b_address1       |  out|    2|   ap_memory|                 b|         array|
+|b_ce1            |  out|    1|   ap_memory|                 b|         array|
+|b_q1             |   in|    8|   ap_memory|                 b|         array|
+|c_address0       |  out|    2|   ap_memory|                 c|         array|
+|c_ce0            |  out|    1|   ap_memory|                 c|         array|
+|c_q0             |   in|   16|   ap_memory|                 c|         array|
+|c_address1       |  out|    2|   ap_memory|                 c|         array|
+|c_ce1            |  out|    1|   ap_memory|                 c|         array|
+|c_q1             |   in|   16|   ap_memory|                 c|         array|
+|result_address0  |  out|    2|   ap_memory|            result|         array|
+|result_ce0       |  out|    1|   ap_memory|            result|         array|
+|result_we0       |  out|    1|   ap_memory|            result|         array|
+|result_d0        |  out|    8|   ap_memory|            result|         array|
+|result_address1  |  out|    2|   ap_memory|            result|         array|
+|result_ce1       |  out|    1|   ap_memory|            result|         array|
+|result_we1       |  out|    1|   ap_memory|            result|         array|
+|result_d1        |  out|    8|   ap_memory|            result|         array|
++-----------------+-----+-----+------------+------------------+--------------+
+

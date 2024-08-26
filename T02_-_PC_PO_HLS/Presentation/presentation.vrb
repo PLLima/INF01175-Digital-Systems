@@ -1,6 +1,7 @@
 \frametitle{Algoritmo em C}
+
         \lstinputlisting
-        [caption= \textit{Header} de \texttt{matrix\_operations.cpp},
+        [caption= Implementação de \texttt{matrix\_operations.h},
         captionpos=b,
         basicstyle=\tiny,
         numbers=left,
@@ -9,4 +10,4 @@
         frame=single,
         framexleftmargin=22pt,
         language=C++]
-        {./code/matrix_operations.h}
+        {./code/matrix_operations.cpp}

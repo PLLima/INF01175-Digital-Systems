@@ -6,23 +6,23 @@ void calculate_matrix(
       matrix_c_t c[MATRIX_A_ROWS][MATRIX_B_COLUMNS],
       result_t result[MATRIX_A_ROWS][MATRIX_B_COLUMNS])
 {
-   matrix_c_t intermediate[MATRIX_A_ROWS][MATRIX_B_COLUMNS];
+   matrix_c_t intermediate;
 
-   for(int i = 0; i < MATRIX_A_ROWS; i++)
+   calculate_matrix_label2:for(int i = 0; i < MATRIX_A_ROWS; i++)
    {
-      for(int j = 0; j < MATRIX_B_COLUMNS; j++)
+      calculate_matrix_label1:for(int j = 0; j < MATRIX_B_COLUMNS; j++)
       {
-         intermediate[i][j] = 0;
+         intermediate = 0;
 
-         for(int k = 0; k < MATRIX_B_ROWS; k++)
-            intermediate[i][j] += a[i][k] * b[k][j];
+         calculate_matrix_label0:for(int k = 0; k < MATRIX_B_ROWS; k++)
+            intermediate += a[i][k] * b[k][j];
 
-         intermediate[i][j] += c[i][j];
+         intermediate += c[i][j];
 
-         if(intermediate[i][j] > 128)
-            intermediate[i][j] = 128;
+         if(intermediate > 128)
+            intermediate = 128;
 
-         result[i][j] = result_t(intermediate[i][j]);
+         result[i][j] = result_t(intermediate);
       }
    }
 }

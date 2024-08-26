@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../PC-PO-VHDL.gen/sources_1/ip/mem_r/sim/mem_r.v" \
+"../../../../PC-PO-VHDL.gen/sources_1/ip/mem_c/sim/mem_c.v" \
+"../../../../PC-PO-VHDL.gen/sources_1/ip/mem_b/sim/mem_b.v" \
+"../../../../PC-PO-VHDL.gen/sources_1/ip/mem_a/sim/mem_a.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

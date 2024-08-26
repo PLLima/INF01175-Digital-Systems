@@ -1,0 +1,31 @@
+---
+MainSourceFile:  /home/pllima0909/Documents/Git/INF01175-Digital-Systems/T02_-_PC_PO_HLS/HLS/HLS/Basic_Solution/.autopilot/db/matrix_operations.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_11_1:  '
+    FileOffset:      11
+    FilePath:        /home/pllima0909/Documents/Git/INF01175-Digital-Systems/T02_-_PC_PO_HLS/HLS/HLS_src/matrix_operations.cpp
+    Replacements:    
+      - FilePath:        /home/pllima0909/Documents/Git/INF01175-Digital-Systems/T02_-_PC_PO_HLS/HLS/HLS/Basic_Solution/.autopilot/db/matrix_operations.pp.0.cpp
+        Offset:          199524
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_11_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_13_2:  '
+    FileOffset:      13
+    FilePath:        /home/pllima0909/Documents/Git/INF01175-Digital-Systems/T02_-_PC_PO_HLS/HLS/HLS_src/matrix_operations.cpp
+    Replacements:    
+      - FilePath:        /home/pllima0909/Documents/Git/INF01175-Digital-Systems/T02_-_PC_PO_HLS/HLS/HLS/Basic_Solution/.autopilot/db/matrix_operations.pp.0.cpp
+        Offset:          199562
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_13_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_17_3:  '
+    FileOffset:      17
+    FilePath:        /home/pllima0909/Documents/Git/INF01175-Digital-Systems/T02_-_PC_PO_HLS/HLS/HLS_src/matrix_operations.cpp
+    Replacements:    
+      - FilePath:        /home/pllima0909/Documents/Git/INF01175-Digital-Systems/T02_-_PC_PO_HLS/HLS/HLS/Basic_Solution/.autopilot/db/matrix_operations.pp.0.cpp
+        Offset:          199634
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_17_3: '
+...

@@ -1,0 +1,205 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "calculate_matrix",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "calculate_matrix"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/pllima0909/Documents/Git/INF01175-Digital-Systems/T02_-_PC_PO_HLS/HLS/HLS/Unroll_and_Array_Partition/directives.tcl",
+    "sourceLine": 7,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "calculate_matrix",
+    "id": 1,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "calculate_matrix_label0",
+    "pragma": {
+      "name": "UNROLL"
+    },
+    "slx": false,
+    "sourceFile": "/home/pllima0909/Documents/Git/INF01175-Digital-Systems/T02_-_PC_PO_HLS/HLS/HLS/Unroll_and_Array_Partition/directives.tcl",
+    "sourceLine": 8,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "calculate_matrix",
+    "id": 2,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "calculate_matrix_label1",
+    "pragma": {
+      "name": "UNROLL"
+    },
+    "slx": false,
+    "sourceFile": "/home/pllima0909/Documents/Git/INF01175-Digital-Systems/T02_-_PC_PO_HLS/HLS/HLS/Unroll_and_Array_Partition/directives.tcl",
+    "sourceLine": 9,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "calculate_matrix",
+    "id": 3,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "calculate_matrix_label2",
+    "pragma": {
+      "name": "UNROLL"
+    },
+    "slx": false,
+    "sourceFile": "/home/pllima0909/Documents/Git/INF01175-Digital-Systems/T02_-_PC_PO_HLS/HLS/HLS/Unroll_and_Array_Partition/directives.tcl",
+    "sourceLine": 10,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "calculate_matrix",
+    "id": 4,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "ARRAY_PARTITION",
+      "option": [
+        {
+          "name": "complete",
+          "value": ""
+        },
+        {
+          "name": "dim",
+          "value": "0"
+        },
+        {
+          "name": "variable",
+          "value": "a"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/pllima0909/Documents/Git/INF01175-Digital-Systems/T02_-_PC_PO_HLS/HLS/HLS/Unroll_and_Array_Partition/directives.tcl",
+    "sourceLine": 11,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "calculate_matrix",
+    "id": 5,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "ARRAY_PARTITION",
+      "option": [
+        {
+          "name": "complete",
+          "value": ""
+        },
+        {
+          "name": "dim",
+          "value": "0"
+        },
+        {
+          "name": "variable",
+          "value": "b"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/pllima0909/Documents/Git/INF01175-Digital-Systems/T02_-_PC_PO_HLS/HLS/HLS/Unroll_and_Array_Partition/directives.tcl",
+    "sourceLine": 12,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "calculate_matrix",
+    "id": 6,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "ARRAY_PARTITION",
+      "option": [
+        {
+          "name": "complete",
+          "value": ""
+        },
+        {
+          "name": "dim",
+          "value": "0"
+        },
+        {
+          "name": "variable",
+          "value": "c"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/pllima0909/Documents/Git/INF01175-Digital-Systems/T02_-_PC_PO_HLS/HLS/HLS/Unroll_and_Array_Partition/directives.tcl",
+    "sourceLine": 13,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "calculate_matrix",
+    "id": 7,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "ARRAY_PARTITION",
+      "option": [
+        {
+          "name": "complete",
+          "value": ""
+        },
+        {
+          "name": "dim",
+          "value": "0"
+        },
+        {
+          "name": "variable",
+          "value": "result"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/pllima0909/Documents/Git/INF01175-Digital-Systems/T02_-_PC_PO_HLS/HLS/HLS/Unroll_and_Array_Partition/directives.tcl",
+    "sourceLine": 14,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "calculate_matrix",
+    "id": 8,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "calculate_matrix"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/pllima0909/Documents/Git/INF01175-Digital-Systems/T02_-_PC_PO_HLS/HLS/HLS/Unroll_and_Array_Partition/csynth.tcl",
+    "sourceLine": 16,
+    "success": true
+  }
+]

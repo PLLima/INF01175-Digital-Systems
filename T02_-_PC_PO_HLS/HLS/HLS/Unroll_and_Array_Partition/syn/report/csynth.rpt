@@ -1,0 +1,148 @@
+
+
+================================================================
+== Synthesis Summary Report of 'calculate_matrix'
+================================================================
++ General Information: 
+    * Date:           Mon Aug 26 02:47:46 2024
+    * Version:        2023.2.2 (Build 4101106 on Feb  9 2024)
+    * Project:        HLS
+    * Solution:       Unroll_and_Array_Partition (Vivado IP Flow Target)
+    * Product family: artix7l
+    * Target device:  xc7a75tl-ftg256-2L
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +--------------------+------+------+---------+--------+----------+---------+------+----------+------+--------+----------+-----------+-----+
+    |       Modules      | Issue|      | Latency | Latency| Iteration|         | Trip |          |      |        |          |           |     |
+    |       & Loops      | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM |   DSP  |    FF    |    LUT    | URAM|
+    +--------------------+------+------+---------+--------+----------+---------+------+----------+------+--------+----------+-----------+-----+
+    |+ calculate_matrix  |     -|  8.08|        3|  60.000|         -|        4|     -|        no|     -|  4 (2%)|  36 (~0%)|  405 (~0%)|    -|
+    +--------------------+------+------+---------+--------+----------+---------+------+----------+------+--------+----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* Other Ports
++------------+---------+-----------+----------+
+| Port       | Mode    | Direction | Bitwidth |
++------------+---------+-----------+----------+
+| a_0_0      | ap_none | in        | 8        |
+| a_0_1      | ap_none | in        | 8        |
+| a_1_0      | ap_none | in        | 8        |
+| a_1_1      | ap_none | in        | 8        |
+| b_0_0      | ap_none | in        | 8        |
+| b_0_1      | ap_none | in        | 8        |
+| b_1_0      | ap_none | in        | 8        |
+| b_1_1      | ap_none | in        | 8        |
+| c_0_0      | ap_none | in        | 16       |
+| c_0_1      | ap_none | in        | 16       |
+| c_1_0      | ap_none | in        | 16       |
+| c_1_1      | ap_none | in        | 16       |
+| result_0_0 | ap_vld  | out       | 8        |
+| result_0_1 | ap_vld  | out       | 8        |
+| result_1_0 | ap_vld  | out       | 8        |
+| result_1_1 | ap_vld  | out       | 8        |
++------------+---------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+-----------------+
+| Argument | Direction | Datatype        |
++----------+-----------+-----------------+
+| a        | in        | unsigned char*  |
+| b        | in        | unsigned char*  |
+| c        | in        | unsigned short* |
+| result   | out       | unsigned char*  |
++----------+-----------+-----------------+
+
+* SW-to-HW Mapping
++----------+-------------------+---------+
+| Argument | HW Interface      | HW Type |
++----------+-------------------+---------+
+| a        | a_0_0             | port    |
+| a        | a_0_1             | port    |
+| a        | a_1_0             | port    |
+| a        | a_1_1             | port    |
+| b        | b_0_0             | port    |
+| b        | b_0_1             | port    |
+| b        | b_1_0             | port    |
+| b        | b_1_1             | port    |
+| c        | c_0_0             | port    |
+| c        | c_0_1             | port    |
+| c        | c_1_0             | port    |
+| c        | c_1_1             | port    |
+| result   | result_0_0        | port    |
+| result   | result_0_0_ap_vld | port    |
+| result   | result_0_1        | port    |
+| result   | result_0_1_ap_vld | port    |
+| result   | result_1_0        | port    |
+| result   | result_1_0_ap_vld | port    |
+| result   | result_1_1        | port    |
+| result   | result_1_1_ap_vld | port    |
++----------+-------------------+---------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++-------------------------------------+-----+--------+-----------------+-----+-----------+---------+
+| Name                                | DSP | Pragma | Variable        | Op  | Impl      | Latency |
++-------------------------------------+-----+--------+-----------------+-----+-----------+---------+
+| + calculate_matrix                  | 4   |        |                 |     |           |         |
+|   mul_8ns_8ns_16_1_1_U1             |     |        | intermediate    | mul | auto      | 0       |
+|   mac_muladd_8ns_8ns_16ns_16_4_1_U5 | 1   |        | mul_ln18        | mul | dsp_slice | 3       |
+|   mac_muladd_8ns_8ns_16ns_16_4_1_U5 | 1   |        | add_ln20        | add | dsp_slice | 3       |
+|   intermediate_1_fu_212_p2          |     |        | intermediate_1  | add | fabric    | 0       |
+|   mac_muladd_8ns_8ns_16ns_16_4_1_U6 | 1   |        | intermediate_8  | mul | dsp_slice | 3       |
+|   mul_8ns_8ns_16_1_1_U2             |     |        | mul_ln18_2      | mul | auto      | 0       |
+|   mac_muladd_8ns_8ns_16ns_16_4_1_U7 | 1   |        | intermediate_10 | mul | dsp_slice | 3       |
+|   mul_8ns_8ns_16_1_1_U3             |     |        | mul_ln18_4      | mul | auto      | 0       |
+|   mac_muladd_8ns_8ns_16ns_16_4_1_U8 | 1   |        | intermediate_6  | mul | dsp_slice | 3       |
+|   mul_8ns_8ns_16_1_1_U4             |     |        | mul_ln18_6      | mul | auto      | 0       |
+|   mac_muladd_8ns_8ns_16ns_16_4_1_U6 | 1   |        | add_ln20_2      | add | dsp_slice | 3       |
+|   intermediate_9_fu_236_p2          |     |        | intermediate_9  | add | fabric    | 0       |
+|   mac_muladd_8ns_8ns_16ns_16_4_1_U7 | 1   |        | add_ln20_4      | add | dsp_slice | 3       |
+|   intermediate_11_fu_260_p2         |     |        | intermediate_11 | add | fabric    | 0       |
+|   mac_muladd_8ns_8ns_16ns_16_4_1_U8 | 1   |        | add_ln20_6      | add | dsp_slice | 3       |
+|   intermediate_7_fu_284_p2          |     |        | intermediate_7  | add | fabric    | 0       |
++-------------------------------------+-----+--------+-----------------+-----+-----------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------------+--------------------------------+------------------------------------------------------------------------------+
+| Type            | Options                        | Location                                                                     |
++-----------------+--------------------------------+------------------------------------------------------------------------------+
+| array_partition | complete dim=0 variable=a      | HLS/Unroll_and_Array_Partition/directives.tcl:11 in calculate_matrix, a      |
+| array_partition | complete dim=0 variable=b      | HLS/Unroll_and_Array_Partition/directives.tcl:12 in calculate_matrix, b      |
+| array_partition | complete dim=0 variable=c      | HLS/Unroll_and_Array_Partition/directives.tcl:13 in calculate_matrix, c      |
+| array_partition | complete dim=0 variable=result | HLS/Unroll_and_Array_Partition/directives.tcl:14 in calculate_matrix, result |
+| unroll          |                                | HLS/Unroll_and_Array_Partition/directives.tcl:8 in calculate_matrix          |
+| unroll          |                                | HLS/Unroll_and_Array_Partition/directives.tcl:9 in calculate_matrix          |
+| unroll          |                                | HLS/Unroll_and_Array_Partition/directives.tcl:10 in calculate_matrix         |
++-----------------+--------------------------------+------------------------------------------------------------------------------+
+
+

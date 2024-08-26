@@ -1,0 +1,150 @@
+
+
+================================================================
+== Synthesis Summary Report of 'calculate_matrix'
+================================================================
++ General Information: 
+    * Date:           Mon Aug 26 02:30:43 2024
+    * Version:        2023.2.2 (Build 4101106 on Feb  9 2024)
+    * Project:        HLS
+    * Solution:       Loop_Unroll (Vivado IP Flow Target)
+    * Product family: artix7l
+    * Target device:  xc7a75tl-ftg256-2L
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +--------------------+------+------+---------+--------+----------+---------+------+----------+------+--------+----------+----------+-----+
+    |       Modules      | Issue|      | Latency | Latency| Iteration|         | Trip |          |      |        |          |          |     |
+    |       & Loops      | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM |   DSP  |    FF    |    LUT   | URAM|
+    +--------------------+------+------+---------+--------+----------+---------+------+----------+------+--------+----------+----------+-----+
+    |+ calculate_matrix  |     -|  2.68|        5|  75.000|         -|        6|     -|        no|     -|  4 (2%)|  38 (~0%)|  543 (1%)|    -|
+    +--------------------+------+------+---------+--------+----------+---------+------+----------+------+--------+----------+----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AP_MEMORY
++-----------------+-----------+----------+
+| Port            | Direction | Bitwidth |
++-----------------+-----------+----------+
+| a_address0      | out       | 2        |
+| a_address1      | out       | 2        |
+| a_q0            | in        | 8        |
+| a_q1            | in        | 8        |
+| b_address0      | out       | 2        |
+| b_address1      | out       | 2        |
+| b_q0            | in        | 8        |
+| b_q1            | in        | 8        |
+| c_address0      | out       | 2        |
+| c_address1      | out       | 2        |
+| c_q0            | in        | 16       |
+| c_q1            | in        | 16       |
+| result_address0 | out       | 2        |
+| result_address1 | out       | 2        |
+| result_d0       | out       | 8        |
+| result_d1       | out       | 8        |
++-----------------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+-----------------+
+| Argument | Direction | Datatype        |
++----------+-----------+-----------------+
+| a        | in        | unsigned char*  |
+| b        | in        | unsigned char*  |
+| c        | in        | unsigned short* |
+| result   | out       | unsigned char*  |
++----------+-----------+-----------------+
+
+* SW-to-HW Mapping
++----------+-----------------+---------+----------+
+| Argument | HW Interface    | HW Type | HW Usage |
++----------+-----------------+---------+----------+
+| a        | a_address0      | port    | offset   |
+| a        | a_ce0           | port    |          |
+| a        | a_q0            | port    |          |
+| a        | a_address1      | port    | offset   |
+| a        | a_ce1           | port    |          |
+| a        | a_q1            | port    |          |
+| b        | b_address0      | port    | offset   |
+| b        | b_ce0           | port    |          |
+| b        | b_q0            | port    |          |
+| b        | b_address1      | port    | offset   |
+| b        | b_ce1           | port    |          |
+| b        | b_q1            | port    |          |
+| c        | c_address0      | port    | offset   |
+| c        | c_ce0           | port    |          |
+| c        | c_q0            | port    |          |
+| c        | c_address1      | port    | offset   |
+| c        | c_ce1           | port    |          |
+| c        | c_q1            | port    |          |
+| result   | result_address0 | port    | offset   |
+| result   | result_ce0      | port    |          |
+| result   | result_we0      | port    |          |
+| result   | result_d0       | port    |          |
+| result   | result_address1 | port    | offset   |
+| result   | result_ce1      | port    |          |
+| result   | result_we1      | port    |          |
+| result   | result_d1       | port    |          |
++----------+-----------------+---------+----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++-------------------------------------+-----+--------+----------------+-----+-----------+---------+
+| Name                                | DSP | Pragma | Variable       | Op  | Impl      | Latency |
++-------------------------------------+-----+--------+----------------+-----+-----------+---------+
+| + calculate_matrix                  | 4   |        |                |     |           |         |
+|   mac_muladd_8ns_8ns_16ns_16_4_1_U5 | 1   |        | intermediate   | mul | dsp_slice | 3       |
+|   mul_8ns_8ns_16_1_1_U1             |     |        | mul_ln18       | mul | auto      | 0       |
+|   mac_muladd_8ns_8ns_16ns_16_4_1_U5 | 1   |        | add_ln20       | add | dsp_slice | 3       |
+|   intermediate_1_fu_272_p2          |     |        | intermediate_1 | add | fabric    | 0       |
+|   mac_muladd_8ns_8ns_16ns_16_4_1_U6 | 1   |        | intermediate_2 | mul | dsp_slice | 3       |
+|   mul_8ns_8ns_16_1_1_U2             |     |        | mul_ln18_2     | mul | auto      | 0       |
+|   mac_muladd_8ns_8ns_16ns_16_4_1_U6 | 1   |        | add_ln20_2     | add | dsp_slice | 3       |
+|   intermediate_3_fu_296_p2          |     |        | intermediate_3 | add | fabric    | 0       |
+|   mac_muladd_8ns_8ns_16ns_16_4_1_U7 | 1   |        | intermediate_4 | mul | dsp_slice | 3       |
+|   mul_8ns_8ns_16_1_1_U3             |     |        | mul_ln18_4     | mul | auto      | 0       |
+|   mac_muladd_8ns_8ns_16ns_16_4_1_U7 | 1   |        | add_ln20_4     | add | dsp_slice | 3       |
+|   intermediate_5_fu_320_p2          |     |        | intermediate_5 | add | fabric    | 0       |
+|   mac_muladd_8ns_8ns_16ns_16_4_1_U8 | 1   |        | intermediate_6 | mul | dsp_slice | 3       |
+|   mul_8ns_8ns_16_1_1_U4             |     |        | mul_ln18_6     | mul | auto      | 0       |
+|   mac_muladd_8ns_8ns_16ns_16_4_1_U8 | 1   |        | add_ln20_6     | add | dsp_slice | 3       |
+|   intermediate_7_fu_344_p2          |     |        | intermediate_7 | add | fabric    | 0       |
++-------------------------------------+-----+--------+----------------+-----+-----------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++--------+---------+-------------------------------------------------------+
+| Type   | Options | Location                                              |
++--------+---------+-------------------------------------------------------+
+| unroll |         | HLS/Loop_Unroll/directives.tcl:8 in calculate_matrix  |
+| unroll |         | HLS/Loop_Unroll/directives.tcl:9 in calculate_matrix  |
+| unroll |         | HLS/Loop_Unroll/directives.tcl:10 in calculate_matrix |
++--------+---------+-------------------------------------------------------+
+
+

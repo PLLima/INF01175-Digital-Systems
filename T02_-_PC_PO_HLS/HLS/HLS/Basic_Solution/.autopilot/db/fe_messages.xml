@@ -1,0 +1,12 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/pllima0909/Documents/Git/INF01175-Digital-Systems/T02_-_PC_PO_HLS/HLS/HLS/Basic_Solution/csynth.tcl:16:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="calculate_matrix" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=calculate_matrix" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="HLS_src/matrix_operations.cpp:17:27" msg_body="Loop 'VITIS_LOOP_17_3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_17_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="HLS_src/matrix_operations.cpp:8:0" msg_body="Unrolling loop 'VITIS_LOOP_17_3' (HLS_src/matrix_operations.cpp:17:27) in function 'calculate_matrix' completely with a factor of 2">
+        <args Factor="2" LoopLoc="HLS_src/matrix_operations.cpp:17:27" LoopName="VITIS_LOOP_17_3"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

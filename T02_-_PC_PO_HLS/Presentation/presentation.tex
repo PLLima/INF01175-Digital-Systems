@@ -107,9 +107,9 @@
             e $ C_{2x2} $ tais que $ a_{ij} $, $ b_{ij} $,
             $ c_{ij} \in \mathbb{N} $ e $ a_{ij} < 255 $,
             $ b_{ij} < 255 $, $ c_{ij} < 65535 $, $ \forall i $,
-            $ j \in \{ 1,2 \}$, e 
+            $ j \in \{ 1,2 \}$, e $ F(M_{2x2}) = Q_{2x2} $ tal que
 
-            $$ F(M) = 
+            $$ q_{ij} = 
                 \begin{cases}
                     m_{ij} & \text{se } 0 < m_{ij} \leqslant 128 \\
                     128 & \text{se } m_{ij} > 128
@@ -128,7 +128,7 @@
 
     \section{Resolução HLS}
     \subsection{Programa em C}
-    \begin{frame}
+    \begin{frame}[fragile]
         \frametitle{Algoritmo em C}
 
         \lstinputlisting
@@ -144,7 +144,7 @@
         {./code/matrix_operations.h}
     \end{frame}
 
-    \begin{frame}
+    \begin{frame}[fragile]
         \frametitle{Algoritmo em C}
 
         \lstinputlisting

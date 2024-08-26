@@ -1,0 +1,17 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "matrix_operations.cpp",
+    "fileloc": 3,
+    "instructions": 97,
+    "loads": {
+      "T": 12
+    },
+    "name": "calculate_matrix",
+    "stores": {
+      "T": 4
+    },
+    "total_instructions": 97
+  }
+}

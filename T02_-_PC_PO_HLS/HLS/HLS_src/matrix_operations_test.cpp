@@ -12,22 +12,22 @@ int main(void)
    result_t software_result[MATRIX_A_ROWS][MATRIX_B_COLUMNS];
    int error_count = 0;
 
-   matrix_c_t intermediate[MATRIX_A_ROWS][MATRIX_B_COLUMNS] = {0};
-   for(int i = 0; i < MATRIX_A_ROWS; i++) {
-      for(int j = 0; j < MATRIX_B_COLUMNS; j++) {
-         for(int k = 0; k < MATRIX_B_ROWS; k++) {
-            intermediate[i][j] += in_matrix_a[i][k] * in_matrix_b[k][j];
-         }
-      }
-   }
-   for(int i = 0; i < MATRIX_A_ROWS; i++) {
-      for(int j = 0; j < MATRIX_B_COLUMNS; j++) {
-         intermediate[i][j] += in_matrix_c[i][j];
-         if(intermediate[i][j] > 128)
-         {
-            intermediate[i][j] = 128;
-         }
-         software_result[i][j] = result_t(intermediate[i][j]);
+   matrix_c_t intermediate;
+   for(int i = 0; i < MATRIX_A_ROWS; i++)
+   {
+      for(int j = 0; j < MATRIX_B_COLUMNS; j++)
+      {
+         intermediate = 0;
+
+         for(int k = 0; k < MATRIX_B_ROWS; k++)
+            intermediate += in_matrix_a[i][k] * in_matrix_b[k][j];
+
+         intermediate += in_matrix_c[i][j];
+
+         if(intermediate > 128)
+            intermediate = 128;
+
+         software_result[i][j] = result_t(intermediate);
       }
    }
 

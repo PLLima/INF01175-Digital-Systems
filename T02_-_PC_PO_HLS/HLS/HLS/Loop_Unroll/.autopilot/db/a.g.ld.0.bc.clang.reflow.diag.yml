@@ -1,0 +1,112 @@
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: HLS_src/matrix_operations.cpp, Line: 8, Column: 0 }
+Function:        _Z16calculate_matrixPA2_hS0_PA2_tS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        calculate_matrix_label2
+  - String:          ''' ('
+  - LoopLoc:         'HLS_src/matrix_operations.cpp:11:28'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculate_matrix
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: HLS_src/matrix_operations.cpp, Line: 8, Column: 0 }
+Function:        _Z16calculate_matrixPA2_hS0_PA2_tS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        calculate_matrix_label1
+  - String:          ''' ('
+  - LoopLoc:         'HLS_src/matrix_operations.cpp:13:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculate_matrix
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: HLS_src/matrix_operations.cpp, Line: 8, Column: 0 }
+Function:        _Z16calculate_matrixPA2_hS0_PA2_tS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        calculate_matrix_label0
+  - String:          ''' ('
+  - LoopLoc:         'HLS_src/matrix_operations.cpp:17:34'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculate_matrix
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: HLS_src/matrix_operations.cpp, Line: 8, Column: 0 }
+Function:        _Z16calculate_matrixPA2_hS0_PA2_tS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        calculate_matrix_label0
+  - String:          ''' ('
+  - LoopLoc:         'HLS_src/matrix_operations.cpp:17:34'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculate_matrix
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: HLS_src/matrix_operations.cpp, Line: 8, Column: 0 }
+Function:        _Z16calculate_matrixPA2_hS0_PA2_tS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        calculate_matrix_label1
+  - String:          ''' ('
+  - LoopLoc:         'HLS_src/matrix_operations.cpp:13:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculate_matrix
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: HLS_src/matrix_operations.cpp, Line: 8, Column: 0 }
+Function:        _Z16calculate_matrixPA2_hS0_PA2_tS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        calculate_matrix_label0
+  - String:          ''' ('
+  - LoopLoc:         'HLS_src/matrix_operations.cpp:17:34'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculate_matrix
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: HLS_src/matrix_operations.cpp, Line: 8, Column: 0 }
+Function:        _Z16calculate_matrixPA2_hS0_PA2_tS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        calculate_matrix_label0
+  - String:          ''' ('
+  - LoopLoc:         'HLS_src/matrix_operations.cpp:17:34'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          calculate_matrix
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...

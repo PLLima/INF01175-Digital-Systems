@@ -1,0 +1,2 @@
+mem_c.v,verilog,xil_defaultlib,../../../../PC-PO-VHDL.gen/sources_1/ip/mem_c/sim/mem_c.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

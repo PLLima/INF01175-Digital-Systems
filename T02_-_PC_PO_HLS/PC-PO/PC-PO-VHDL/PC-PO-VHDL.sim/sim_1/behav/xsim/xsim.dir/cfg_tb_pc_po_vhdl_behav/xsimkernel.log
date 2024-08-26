@@ -1,0 +1,7 @@
+Running: xsim.dir/cfg_tb_pc_po_vhdl_behav/xsimk -simmode gui -wdb cfg_tb_pc_po_vhdl_behav.wdb -simrunnum 0 -socket 34065
+Design successfully loaded
+Design Loading Memory Usage: 24420 KB (Peak: 24568 KB)
+Design Loading CPU Usage: 60 ms
+Simulation completed
+Simulation Memory Usage: 123648 KB (Peak: 163688 KB)
+Simulation CPU Usage: 70 ms

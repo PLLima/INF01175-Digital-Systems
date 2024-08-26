@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2.2 (64-bit)
+# SW Build 4126759 on Thu Feb  8 23:52:05 MST 2024
+# IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+# SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+# Start of session at: Sun Aug 25 23:39:00 2024
+# Process ID: 47590
+# Current directory: /home/pllima0909/Documents/Git/INF01175-Digital-Systems/T02_-_PC_PO_HLS/PC-PO/PC-PO-VHDL/PC-PO-VHDL.runs/mem_a_synth_1
+# Command line: vivado -log mem_a.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mem_a.tcl
+# Log file: /home/pllima0909/Documents/Git/INF01175-Digital-Systems/T02_-_PC_PO_HLS/PC-PO/PC-PO-VHDL/PC-PO-VHDL.runs/mem_a_synth_1/mem_a.vds
+# Journal file: /home/pllima0909/Documents/Git/INF01175-Digital-Systems/T02_-_PC_PO_HLS/PC-PO/PC-PO-VHDL/PC-PO-VHDL.runs/mem_a_synth_1/vivado.jou
+# Running On: PLLima, OS: Linux, CPU Frequency: 400.000 MHz, CPU Physical cores: 16, Host memory: 16114 MB
+#-----------------------------------------------------------
+source mem_a.tcl -notrace
