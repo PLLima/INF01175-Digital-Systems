@@ -5,24 +5,50 @@
 \headcommand {\beamer@sectionpages {1}{2}}
 \headcommand {\beamer@subsectionpages {1}{2}}
 \headcommand {\sectionentry {1}{Enunciado do Problema}{3}{Enunciado do Problema}{0}}
-\headcommand {\slideentry {1}{0}{1}{3/4}{}{0}}
-\headcommand {\beamer@framepages {3}{4}}
-\headcommand {\beamer@sectionpages {3}{4}}
-\headcommand {\beamer@subsectionpages {3}{4}}
-\headcommand {\sectionentry {2}{Resolução PC-PO}{5}{Resolução PC-PO}{0}}
-\headcommand {\slideentry {2}{0}{1}{5/5}{}{0}}
-\headcommand {\beamer@framepages {5}{5}}
-\headcommand {\beamer@sectionpages {5}{5}}
-\headcommand {\beamer@subsectionpages {5}{5}}
-\headcommand {\sectionentry {3}{Resolução HLS}{6}{Resolução HLS}{0}}
-\headcommand {\beamer@subsectionpages {6}{5}}
-\headcommand {\beamer@subsectionentry {0}{3}{1}{6}{Programa em C}}
-\headcommand {\slideentry {3}{1}{1}{6/6}{Programa em C}{0}}
+\headcommand {\slideentry {1}{0}{1}{3/3}{}{0}}
+\headcommand {\beamer@framepages {3}{3}}
+\headcommand {\slideentry {1}{0}{2}{4/5}{}{0}}
+\headcommand {\beamer@framepages {4}{5}}
+\headcommand {\beamer@sectionpages {3}{5}}
+\headcommand {\beamer@subsectionpages {3}{5}}
+\headcommand {\sectionentry {2}{Resolução PC-PO}{6}{Resolução PC-PO}{0}}
+\headcommand {\slideentry {2}{0}{1}{6/6}{}{0}}
 \headcommand {\beamer@framepages {6}{6}}
-\headcommand {\slideentry {3}{1}{2}{7/7}{Programa em C}{0}}
+\headcommand {\slideentry {2}{0}{2}{7/7}{}{0}}
 \headcommand {\beamer@framepages {7}{7}}
-\headcommand {\beamer@partpages {1}{7}}
-\headcommand {\beamer@subsectionpages {6}{7}}
 \headcommand {\beamer@sectionpages {6}{7}}
-\headcommand {\beamer@documentpages {7}}
-\headcommand {\gdef \inserttotalframenumber {6}}
+\headcommand {\beamer@subsectionpages {6}{7}}
+\headcommand {\sectionentry {3}{Resolução HLS}{8}{Resolução HLS}{0}}
+\headcommand {\slideentry {3}{0}{1}{8/8}{}{0}}
+\headcommand {\beamer@framepages {8}{8}}
+\headcommand {\beamer@subsectionpages {8}{8}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{9}{Programa em C}}
+\headcommand {\slideentry {3}{1}{1}{9/9}{Programa em C}{0}}
+\headcommand {\beamer@framepages {9}{9}}
+\headcommand {\slideentry {3}{1}{2}{10/10}{Programa em C}{0}}
+\headcommand {\beamer@framepages {10}{10}}
+\headcommand {\beamer@subsectionpages {9}{10}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{11}{Solução Básica com HLS}}
+\headcommand {\slideentry {3}{2}{1}{11/12}{Solução Básica com HLS}{0}}
+\headcommand {\beamer@framepages {11}{12}}
+\headcommand {\slideentry {3}{2}{2}{13/14}{Solução Básica com HLS}{0}}
+\headcommand {\beamer@framepages {13}{14}}
+\headcommand {\beamer@subsectionpages {11}{14}}
+\headcommand {\beamer@subsectionentry {0}{3}{3}{15}{Primeira Solução Otimizada com HLS}}
+\headcommand {\slideentry {3}{3}{1}{15/16}{Primeira Solução Otimizada com HLS}{0}}
+\headcommand {\beamer@framepages {15}{16}}
+\headcommand {\slideentry {3}{3}{2}{17/18}{Primeira Solução Otimizada com HLS}{0}}
+\headcommand {\beamer@framepages {17}{18}}
+\headcommand {\beamer@subsectionpages {15}{18}}
+\headcommand {\beamer@subsectionentry {0}{3}{4}{19}{Segunda Solução Otimizada com HLS}}
+\headcommand {\slideentry {3}{4}{1}{19/20}{Segunda Solução Otimizada com HLS}{0}}
+\headcommand {\beamer@framepages {19}{20}}
+\headcommand {\slideentry {3}{4}{2}{21/22}{Segunda Solução Otimizada com HLS}{0}}
+\headcommand {\beamer@framepages {21}{22}}
+\headcommand {\slideentry {3}{4}{3}{23/23}{Segunda Solução Otimizada com HLS}{0}}
+\headcommand {\beamer@framepages {23}{23}}
+\headcommand {\beamer@partpages {1}{23}}
+\headcommand {\beamer@subsectionpages {19}{23}}
+\headcommand {\beamer@sectionpages {8}{23}}
+\headcommand {\beamer@documentpages {23}}
+\headcommand {\gdef \inserttotalframenumber {16}}

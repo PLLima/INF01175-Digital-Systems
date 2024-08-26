@@ -1,6 +1,9 @@
 \documentclass{beamer}
 \usetheme{Madrid}
 \usecolortheme{seahorse}
+\setbeamertemplate{caption}[numbered]
+
+\usepackage{lmodern}
 
 % Language setting
 \usepackage[main=brazilian, english]{babel}
@@ -8,6 +11,8 @@
 \usepackage{tcolorbox}
 \usepackage{listings}
 \usepackage{tikz}
+
+\usepackage{caption}
 
 \setbeamerfont{title}{series=\bfseries}
 \setbeamerfont{subtitle}{series=\normalfont}
@@ -59,6 +64,13 @@
 
     \endgroup
     \vfill
+}
+
+\AtBeginSection{
+    \begin{frame}
+        \frametitle{Sumário}
+        \tableofcontents[currentsection]
+    \end{frame}
 }
 
 \titlegraphic
@@ -114,7 +126,7 @@
                     m_{ij} & \text{se } 0 < m_{ij} \leqslant 128 \\
                     128 & \text{se } m_{ij} > 128
                 \end{cases}
-                \text{ , então}
+                \text{,} \,\forall i \text{, } j \in \{ 1,2 \} \text{, então}
             $$
 
             $$ R = F[(A \times B) + C] $$
@@ -149,7 +161,7 @@
 
         \lstinputlisting
         [caption= Implementação de \texttt{matrix\_operations.h},
-        captionpos=b,
+        captionpos=b, 
         basicstyle=\tiny,
         numbers=left,
         columns=flexible,
@@ -158,6 +170,111 @@
         framexleftmargin=22pt,
         language=C++]
         {./code/matrix_operations.cpp}
+    \end{frame}
+
+    \subsection{Solução Básica com HLS}
+    \begin{frame}
+        \frametitle{Síntese da Solução Básica com HLS}
+
+        \begingroup \onslide<1->
+        Como solução básica,
+        não se utilizou \textbf{nenhuma otimização}.
+        \endgroup
+
+        \begin{figure}[h] \onslide<2->
+            \centering
+            \includegraphics[width=1\linewidth]{./images/solutions/HLS_-_Basic_Solution.png}
+            \caption{\label{img:syn-hls-basic-solution} Resultado da Síntese Básica com HLS}
+          \end{figure}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Interface da Solução Básica com HLS}
+
+        \begingroup \onslide<2->
+        Percebe-se um total de \textbf{12 IOBs}, totalizando
+        \textbf{68 \textit{bits}} de interface de dados.
+        \endgroup
+
+        \begin{figure}[h] \onslide<1->
+            \centering
+            \includegraphics[width=0.62\linewidth]{./images/solutions/VHDL_-_Basic_Solution.png}
+            \caption{\label{img:int-hls-basic-solution} Interface da Solução Básica com HLS}
+          \end{figure}
+    \end{frame}
+
+    \subsection{Primeira Solução Otimizada com HLS}
+    \begin{frame}
+        \frametitle{Síntese da Primeira Solução Otimizada com HLS}
+
+        \begingroup \onslide<1->
+        Como primeira solução otimizada, utilizou-se \textbf{\texttt{loop unroll}}
+        em cada um dos \textit{loops} da aplicação, buscando aumentar o paralelismo
+        da solução.
+        \endgroup
+
+        \begin{figure}[h] \onslide<2->
+            \centering
+            \includegraphics[width=1\linewidth]{./images/solutions/HLS_-_Loop_Unroll.png}
+            \caption{\label{img:syn-hls-optimized-solution-1} Resultado da Síntese da Solução Otimizada 1 com HLS}
+          \end{figure}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Interface da Primeira Solução Otimizada com HLS}
+
+        \begingroup \onslide<2->
+        Percebe-se um total de \textbf{16 IOBs}, totalizando
+        \textbf{96 bits} de interface de dados.
+        \endgroup
+
+        \begin{figure}[h] \onslide<1->
+            \centering
+            \includegraphics[width=0.55\linewidth]{./images/solutions/VHDL_-_Loop_Unroll.png}
+            \caption{\label{img:int-hls-optimized-solution-1} Interface da Solução Otimizada 1 com HLS}
+          \end{figure}
+    \end{frame}
+
+    \subsection{Segunda Solução Otimizada com HLS}
+    \begin{frame}
+        \frametitle{Síntese da Segunda Solução Otimizada com HLS}
+
+        \begingroup \onslide<1->
+        Além das otimizações da versão anterior (\texttt{loop unroll}), acrescentou-se
+        \textbf{\texttt{array partitioning}} com dimensão zero em todas as entradas e
+        saídas do sistema. Isso foi feito em busca do maior nível de paralelismo possível
+        para este circuito.
+        \endgroup
+
+        \begin{figure}[h] \onslide<2->
+            \centering
+            \includegraphics[width=1\linewidth]{./images/solutions/HLS_-_Unroll_and_Array_Partitioning.png}
+            \caption{\label{img:syn-hls-optimized-solution-2} Resultado da Síntese da Solução Otimizada 2 com HLS}
+          \end{figure}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Interface da Segunda Solução Otimizada com HLS}
+
+        \begingroup \onslide<2->
+        Percebe-se um total de \textbf{16 IOBs}, totalizando
+        \textbf{160 bits} de interface de dados.
+        \endgroup
+
+        \begin{figure}[h] \onslide<1->
+            \centering
+            \includegraphics[width=0.55\linewidth]{./images/solutions/VHDL_-_Unroll_and_Array_Partitioning.png}
+            \caption{\label{img:int-hls-optimized-solution-2} Interface da Solução Otimizada 2 com HLS}
+          \end{figure}
+    \end{frame}
+
+    \begin{frame}
+        \centering \huge
+        \vfill
+        Obrigado pela atenção!
+
+        Alguma dúvida?
+        \vfill
     \end{frame}
 
 \end{document}
