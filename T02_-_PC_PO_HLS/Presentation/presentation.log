@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.23)  26 AUG 2024 16:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.23)  27 AUG 2024 09:47
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -622,62 +622,66 @@ File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
- (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
-Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
- (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen291
-\pgffor@skip=\dimen292
-\pgffor@stack=\toks48
-\pgffor@toks=\toks49
-)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
-Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
- (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
-File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@plot@mark@count=\count342
-\pgfplotmarksize=\dimen293
+ (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2020/08/19 v1.3 Adjusting TeX boxes (trim, clip, ...)
+ (/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+ (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks48
+\XKV@tempa@toks=\toks49
 )
-\tikz@lastx=\dimen294
-\tikz@lasty=\dimen295
-\tikz@lastxsaved=\dimen296
-\tikz@lastysaved=\dimen297
-\tikz@lastmovetox=\dimen298
-\tikz@lastmovetoy=\dimen299
-\tikzleveldistance=\dimen300
-\tikzsiblingdistance=\dimen301
-\tikz@figbox=\box86
-\tikz@figbox@bg=\box87
-\tikz@tempbox=\box88
-\tikz@tempbox@bg=\box89
-\tikztreelevel=\count343
-\tikznumberofchildren=\count344
-\tikznumberofcurrentchild=\count345
-\tikz@fig@count=\count346
- (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
-File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfmatrixcurrentrow=\count347
-\pgfmatrixcurrentcolumn=\count348
-\pgf@matrix@numberofcolumns=\count349
+\XKV@depth=\count342
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back-ends (calc, etex, pgfmath)
+) (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
+ (/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box86
 )
-\tikz@expandcount=\count350
- (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-))) (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+\tc@llx=\dimen291
+\tc@lly=\dimen292
+\tc@urx=\dimen293
+\tc@ury=\dimen294
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+ (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen295
+\adjbox@Height=\dimen296
+\adjbox@Depth=\dimen297
+\adjbox@Totalheight=\dimen298
+\adjbox@pwidth=\dimen299
+\adjbox@pheight=\dimen300
+\adjbox@pdepth=\dimen301
+\adjbox@ptotalheight=\dimen302
+ (/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count343
+) (/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box87
+\sift@deathcycles=\count344
+\@vwid@loff=\dimen303
+\@vwid@roff=\dimen304
+)) (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2020/10/26 v3.5g Customizing captions (AR)
  (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
-\captionmargin=\dimen302
-\captionmargin@=\dimen303
-\captionwidth=\dimen304
-\caption@tempdima=\dimen305
-\caption@indent=\dimen306
-\caption@parindent=\dimen307
-\caption@hangindent=\dimen308
+\captionmargin=\dimen305
+\captionmargin@=\dimen306
+\captionwidth=\dimen307
+\caption@tempdima=\dimen308
+\caption@indent=\dimen309
+\caption@parindent=\dimen310
+\caption@hangindent=\dimen311
 Package caption Info: beamer document class detected.
  (/usr/share/texlive/texmf-dist/tex/latex/caption/caption-beamer.sto
 File: caption-beamer.sto 2020/08/22 v2.0 Adaption of the caption package to the beamer document classes (AR)
 ))
-\c@caption@flags=\count351
-\c@continuedfloat=\count352
+\c@caption@flags=\count345
+\c@continuedfloat=\count346
 Package caption Info: hyperref package is loaded.
 Package caption Info: Hyperref support is turned off
 (caption)             because hyperref has stopped early.
@@ -688,8 +692,8 @@ LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 9
 File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count353
-\l__pdf_internal_box=\box90
+\l__color_backend_stack_int=\count347
+\l__pdf_internal_box=\box88
 ) (./presentation.aux)
 \openout1 = `presentation.aux'.
 
@@ -748,16 +752,16 @@ LaTeX Font Info:    ... okay on input line 90.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count354
-\scratchdimen=\dimen309
-\scratchbox=\box91
-\nofMPsegments=\count355
-\nofMParguments=\count356
+\scratchcounter=\count348
+\scratchdimen=\dimen312
+\scratchbox=\box89
+\nofMPsegments=\count349
+\nofMParguments=\count350
 \everyMPshowfont=\toks50
-\MPscratchCnt=\count357
-\MPscratchDim=\dimen310
-\MPnumerator=\count358
-\makeMPintoPDFobject=\count359
+\MPscratchCnt=\count351
+\MPscratchDim=\dimen313
+\MPnumerator=\count352
+\makeMPintoPDFobject=\count353
 \everyMPtoPDFconversion=\toks51
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -773,7 +777,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count360
+\c@section@level=\count354
 )
 LaTeX Info: Redefining \ref on input line 90.
 LaTeX Info: Redefining \pageref on input line 90.
@@ -841,16 +845,16 @@ Dictionary: translator-numbers-dictionary, Language: English
 ) (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-\c@lstlisting=\count361
+\c@lstlisting=\count355
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
  (./presentation.nav)
-<images/logos/UFRGS.png, id=46, 1204.5pt x 962.59625pt>
+<images/logos/UFRGS.png, id=62, 1204.5pt x 962.59625pt>
 File: images/logos/UFRGS.png Graphic file (type png)
 <use images/logos/UFRGS.png>
 Package pdftex.def Info: images/logos/UFRGS.png  used on input line 94.
 (pdftex.def)             Requested size: 68.45801pt x 54.69817pt.
-<images/logos/INF.png, id=48, 219.9417pt x 130.5678pt>
+<images/logos/INF.png, id=64, 219.9417pt x 130.5678pt>
 File: images/logos/INF.png Graphic file (type png)
 <use images/logos/INF.png>
 Package pdftex.def Info: images/logos/INF.png  used on input line 94.
@@ -904,59 +908,126 @@ LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <10.95> not available
 
 ] (./presentation.toc) [6
 
-] [7
+]
+<./images/solutions/PC-PO_-_ASM.jpg, id=338, 1204.5pt x 1949.2825pt>
+File: ./images/solutions/PC-PO_-_ASM.jpg Graphic file (type jpg)
+<use ./images/solutions/PC-PO_-_ASM.jpg>
+Package pdftex.def Info: ./images/solutions/PC-PO_-_ASM.jpg  used on input line 156.
+(pdftex.def)             Requested size: 1204.49707pt x 1949.27776pt.
+File: ./images/solutions/PC-PO_-_ASM.jpg Graphic file (type jpg)
+<use ./images/solutions/PC-PO_-_ASM.jpg>
+Package pdftex.def Info: ./images/solutions/PC-PO_-_ASM.jpg  used on input line 156.
+(pdftex.def)             Requested size: 1204.49707pt x 1949.27776pt.
+ [7
 
-] [8
-
-] [9
+ <./images/solutions/PC-PO_-_ASM.jpg>]
+File: ./images/solutions/PC-PO_-_ASM.jpg Graphic file (type jpg)
+<use ./images/solutions/PC-PO_-_ASM.jpg>
+Package pdftex.def Info: ./images/solutions/PC-PO_-_ASM.jpg  used on input line 156.
+(pdftex.def)             Requested size: 1204.49707pt x 1949.27776pt.
+File: ./images/solutions/PC-PO_-_ASM.jpg Graphic file (type jpg)
+<use ./images/solutions/PC-PO_-_ASM.jpg>
+Package pdftex.def Info: ./images/solutions/PC-PO_-_ASM.jpg  used on input line 156.
+(pdftex.def)             Requested size: 1204.49707pt x 1949.27776pt.
+ [8
 
 ]
-<./images/solutions/PC-PO-Sim1.png, id=385, 1259.70625pt x 704.6325pt>
+<./images/solutions/PC-PO_-_PO.jpg, id=392, 1204.5pt x 2073.7475pt>
+File: ./images/solutions/PC-PO_-_PO.jpg Graphic file (type jpg)
+<use ./images/solutions/PC-PO_-_PO.jpg>
+Package pdftex.def Info: ./images/solutions/PC-PO_-_PO.jpg  used on input line 176.
+(pdftex.def)             Requested size: 1204.49707pt x 2073.74245pt.
+File: ./images/solutions/PC-PO_-_PO.jpg Graphic file (type jpg)
+<use ./images/solutions/PC-PO_-_PO.jpg>
+Package pdftex.def Info: ./images/solutions/PC-PO_-_PO.jpg  used on input line 176.
+(pdftex.def)             Requested size: 1204.49707pt x 2073.74245pt.
+LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <14.4> not available
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 176.
+ [9
+
+ <./images/solutions/PC-PO_-_PO.jpg>]
+File: ./images/solutions/PC-PO_-_PO.jpg Graphic file (type jpg)
+<use ./images/solutions/PC-PO_-_PO.jpg>
+Package pdftex.def Info: ./images/solutions/PC-PO_-_PO.jpg  used on input line 176.
+(pdftex.def)             Requested size: 1204.49707pt x 2073.74245pt.
+File: ./images/solutions/PC-PO_-_PO.jpg Graphic file (type jpg)
+<use ./images/solutions/PC-PO_-_PO.jpg>
+Package pdftex.def Info: ./images/solutions/PC-PO_-_PO.jpg  used on input line 176.
+(pdftex.def)             Requested size: 1204.49707pt x 2073.74245pt.
+ [10
+
+]
+<./images/solutions/PC-PO_-_FSM.jpg, id=446, 1204.5pt x 1574.88374pt>
+File: ./images/solutions/PC-PO_-_FSM.jpg Graphic file (type jpg)
+<use ./images/solutions/PC-PO_-_FSM.jpg>
+Package pdftex.def Info: ./images/solutions/PC-PO_-_FSM.jpg  used on input line 196.
+(pdftex.def)             Requested size: 1204.49707pt x 1574.87991pt.
+File: ./images/solutions/PC-PO_-_FSM.jpg Graphic file (type jpg)
+<use ./images/solutions/PC-PO_-_FSM.jpg>
+Package pdftex.def Info: ./images/solutions/PC-PO_-_FSM.jpg  used on input line 196.
+(pdftex.def)             Requested size: 1204.49707pt x 1574.87991pt.
+ [11
+
+ <./images/solutions/PC-PO_-_FSM.jpg>]
+File: ./images/solutions/PC-PO_-_FSM.jpg Graphic file (type jpg)
+<use ./images/solutions/PC-PO_-_FSM.jpg>
+Package pdftex.def Info: ./images/solutions/PC-PO_-_FSM.jpg  used on input line 196.
+(pdftex.def)             Requested size: 1204.49707pt x 1574.87991pt.
+File: ./images/solutions/PC-PO_-_FSM.jpg Graphic file (type jpg)
+<use ./images/solutions/PC-PO_-_FSM.jpg>
+Package pdftex.def Info: ./images/solutions/PC-PO_-_FSM.jpg  used on input line 196.
+(pdftex.def)             Requested size: 1204.49707pt x 1574.87991pt.
+ [12
+
+] [13
+
+] [14
+
+]
+<./images/solutions/PC-PO-Sim1.png, id=553, 1259.70625pt x 704.6325pt>
 File: ./images/solutions/PC-PO-Sim1.png Graphic file (type png)
 <use ./images/solutions/PC-PO-Sim1.png>
-Package pdftex.def Info: ./images/solutions/PC-PO-Sim1.png  used on input line 182.
-(pdftex.def)             Requested size: 263.56883pt x 147.42885pt.
+Package pdftex.def Info: ./images/solutions/PC-PO-Sim1.png  used on input line 239.
+(pdftex.def)             Requested size: 1259.70319pt x 704.6308pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 182.
+(Font)              <10> on input line 239.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 182.
+(Font)              <7> on input line 239.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 182.
+(Font)              <5> on input line 239.
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <10> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 182.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 239.
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <7> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 182.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 239.
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <5> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 182.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 239.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 182.
-LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <14.4> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 182.
- [10
+(Font)              <14.4> on input line 239.
+ [15
 
  <./images/solutions/PC-PO-Sim1.png>]
 File: ./images/solutions/PC-PO-Sim1.png Graphic file (type png)
 <use ./images/solutions/PC-PO-Sim1.png>
-Package pdftex.def Info: ./images/solutions/PC-PO-Sim1.png  used on input line 182.
-(pdftex.def)             Requested size: 263.56883pt x 147.42885pt.
- [11
+Package pdftex.def Info: ./images/solutions/PC-PO-Sim1.png  used on input line 239.
+(pdftex.def)             Requested size: 1259.70319pt x 704.6308pt.
+ [16
 
 ]
-<./images/solutions/PC-PO-Sim2.png, id=441, 1259.70625pt x 704.6325pt>
+<./images/solutions/PC-PO-Sim2.png, id=608, 1259.70625pt x 704.6325pt>
 File: ./images/solutions/PC-PO-Sim2.png Graphic file (type png)
 <use ./images/solutions/PC-PO-Sim2.png>
-Package pdftex.def Info: ./images/solutions/PC-PO-Sim2.png  used on input line 198.
-(pdftex.def)             Requested size: 263.56883pt x 147.42885pt.
- [12
+Package pdftex.def Info: ./images/solutions/PC-PO-Sim2.png  used on input line 255.
+(pdftex.def)             Requested size: 1259.70319pt x 704.6308pt.
+ [17
 
  <./images/solutions/PC-PO-Sim2.png>]
 File: ./images/solutions/PC-PO-Sim2.png Graphic file (type png)
 <use ./images/solutions/PC-PO-Sim2.png>
-Package pdftex.def Info: ./images/solutions/PC-PO-Sim2.png  used on input line 198.
-(pdftex.def)             Requested size: 263.56883pt x 147.42885pt.
- [13
+Package pdftex.def Info: ./images/solutions/PC-PO-Sim2.png  used on input line 255.
+(pdftex.def)             Requested size: 1259.70319pt x 704.6308pt.
+ [18
 
-] (./presentation.toc) [14
+] (./presentation.toc) [19
 
 ]
 \openout4 = `presentation.vrb'.
@@ -980,7 +1051,7 @@ LaTeX Font Warning: Font shape `OML/lmss/m/n' undefined
 LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 13.
  (/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)) [15
+)) [20
 
 ]
 \openout4 = `presentation.vrb'.
@@ -997,103 +1068,111 @@ LaTeX Font Warning: Font shape `OMS/lmss/m/n' undefined
 LaTeX Font Info:    Trying to load font information for TS1+lmss on input line 18.
 (/usr/share/texmf/tex/latex/lm/ts1lmss.fd
 File: ts1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
-))) [16
+))) [21
 
 ]
-<./images/solutions/HLS_-_Basic_Solution.png, id=584, 1511.6475pt x 519.9425pt>
+<./images/solutions/HLS_-_Basic_Solution.png, id=757, 1511.6475pt x 519.9425pt>
 File: ./images/solutions/HLS_-_Basic_Solution.png Graphic file (type png)
 <use ./images/solutions/HLS_-_Basic_Solution.png>
-Package pdftex.def Info: ./images/solutions/HLS_-_Basic_Solution.png  used on input line 248.
+Package pdftex.def Info: ./images/solutions/HLS_-_Basic_Solution.png  used on input line 305.
 (pdftex.def)             Requested size: 342.2953pt x 117.7357pt.
- [17
+ [22
 
  <./images/solutions/HLS_-_Basic_Solution.png>]
 File: ./images/solutions/HLS_-_Basic_Solution.png Graphic file (type png)
 <use ./images/solutions/HLS_-_Basic_Solution.png>
-Package pdftex.def Info: ./images/solutions/HLS_-_Basic_Solution.png  used on input line 248.
+Package pdftex.def Info: ./images/solutions/HLS_-_Basic_Solution.png  used on input line 305.
 (pdftex.def)             Requested size: 342.2953pt x 117.7357pt.
- [18
+ [23
 
 ]
 LaTeX Font Info:    Font shape `OT1/lmss/bx/it' in size <10.95> not available
-(Font)              Font shape `OT1/lmss/bx/sl' tried instead on input line 263.
-<./images/solutions/VHDL_-_Basic_Solution.png, id=641, 950.55125pt x 743.77875pt>
+(Font)              Font shape `OT1/lmss/bx/sl' tried instead on input line 320.
+<./images/solutions/VHDL_-_Basic_Solution.png, id=813, 950.55125pt x 743.77875pt>
 File: ./images/solutions/VHDL_-_Basic_Solution.png Graphic file (type png)
 <use ./images/solutions/VHDL_-_Basic_Solution.png>
-Package pdftex.def Info: ./images/solutions/VHDL_-_Basic_Solution.png  used on input line 263.
+Package pdftex.def Info: ./images/solutions/VHDL_-_Basic_Solution.png  used on input line 320.
 (pdftex.def)             Requested size: 212.2214pt x 166.0492pt.
- [19
+ [24
 
  <./images/solutions/VHDL_-_Basic_Solution.png>]
 File: ./images/solutions/VHDL_-_Basic_Solution.png Graphic file (type png)
 <use ./images/solutions/VHDL_-_Basic_Solution.png>
-Package pdftex.def Info: ./images/solutions/VHDL_-_Basic_Solution.png  used on input line 263.
+Package pdftex.def Info: ./images/solutions/VHDL_-_Basic_Solution.png  used on input line 320.
 (pdftex.def)             Requested size: 212.2214pt x 166.0492pt.
- [20
+ [25
 
 ]
 LaTeX Font Info:    Font shape `OT1/lmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/lmtt/b/n' tried instead on input line 280.
-<./images/solutions/HLS_-_Loop_Unroll.png, id=696, 1520.68124pt x 518.93875pt>
+(Font)              Font shape `OT1/lmtt/b/n' tried instead on input line 337.
+<./images/solutions/HLS_-_Loop_Unroll.png, id=869, 1520.68124pt x 518.93875pt>
 File: ./images/solutions/HLS_-_Loop_Unroll.png Graphic file (type png)
 <use ./images/solutions/HLS_-_Loop_Unroll.png>
-Package pdftex.def Info: ./images/solutions/HLS_-_Loop_Unroll.png  used on input line 280.
+Package pdftex.def Info: ./images/solutions/HLS_-_Loop_Unroll.png  used on input line 337.
 (pdftex.def)             Requested size: 342.2953pt x 116.80368pt.
- [21
+ [26
 
  <./images/solutions/HLS_-_Loop_Unroll.png>]
 File: ./images/solutions/HLS_-_Loop_Unroll.png Graphic file (type png)
 <use ./images/solutions/HLS_-_Loop_Unroll.png>
-Package pdftex.def Info: ./images/solutions/HLS_-_Loop_Unroll.png  used on input line 280.
+Package pdftex.def Info: ./images/solutions/HLS_-_Loop_Unroll.png  used on input line 337.
 (pdftex.def)             Requested size: 342.2953pt x 116.80368pt.
- [22
+ [27
 
 ]
-<./images/solutions/VHDL_-_Loop_Unroll.png, id=754, 951.555pt x 835.12pt>
+<./images/solutions/VHDL_-_Loop_Unroll.png, id=926, 951.555pt x 835.12pt>
 File: ./images/solutions/VHDL_-_Loop_Unroll.png Graphic file (type png)
 <use ./images/solutions/VHDL_-_Loop_Unroll.png>
-Package pdftex.def Info: ./images/solutions/VHDL_-_Loop_Unroll.png  used on input line 295.
+Package pdftex.def Info: ./images/solutions/VHDL_-_Loop_Unroll.png  used on input line 352.
 (pdftex.def)             Requested size: 188.26346pt x 165.22429pt.
- [23
+ [28
 
  <./images/solutions/VHDL_-_Loop_Unroll.png>]
 File: ./images/solutions/VHDL_-_Loop_Unroll.png Graphic file (type png)
 <use ./images/solutions/VHDL_-_Loop_Unroll.png>
-Package pdftex.def Info: ./images/solutions/VHDL_-_Loop_Unroll.png  used on input line 295.
+Package pdftex.def Info: ./images/solutions/VHDL_-_Loop_Unroll.png  used on input line 352.
 (pdftex.def)             Requested size: 188.26346pt x 165.22429pt.
- [24
+ [29
 
 ]
-<./images/solutions/HLS_-_Unroll_and_Array_Partitioning.png, id=807, 1519.6775pt x 522.95375pt>
+<./images/solutions/HLS_-_Unroll_and_Array_Partitioning.png, id=980, 1519.6775pt x 522.95375pt>
 File: ./images/solutions/HLS_-_Unroll_and_Array_Partitioning.png Graphic file (type png)
 <use ./images/solutions/HLS_-_Unroll_and_Array_Partitioning.png>
-Package pdftex.def Info: ./images/solutions/HLS_-_Unroll_and_Array_Partitioning.png  used on input line 313.
+Package pdftex.def Info: ./images/solutions/HLS_-_Unroll_and_Array_Partitioning.png  used on input line 370.
 (pdftex.def)             Requested size: 342.2953pt x 117.78719pt.
- [25
+ [30
 
  <./images/solutions/HLS_-_Unroll_and_Array_Partitioning.png>]
 File: ./images/solutions/HLS_-_Unroll_and_Array_Partitioning.png Graphic file (type png)
 <use ./images/solutions/HLS_-_Unroll_and_Array_Partitioning.png>
-Package pdftex.def Info: ./images/solutions/HLS_-_Unroll_and_Array_Partitioning.png  used on input line 313.
+Package pdftex.def Info: ./images/solutions/HLS_-_Unroll_and_Array_Partitioning.png  used on input line 370.
 (pdftex.def)             Requested size: 342.2953pt x 117.78719pt.
- [26
+ [31
 
 ]
-<./images/solutions/VHDL_-_Unroll_and_Array_Partitioning.png, id=864, 950.55125pt x 840.13875pt>
+<./images/solutions/VHDL_-_Unroll_and_Array_Partitioning.png, id=1036, 950.55125pt x 840.13875pt>
 File: ./images/solutions/VHDL_-_Unroll_and_Array_Partitioning.png Graphic file (type png)
 <use ./images/solutions/VHDL_-_Unroll_and_Array_Partitioning.png>
-Package pdftex.def Info: ./images/solutions/VHDL_-_Unroll_and_Array_Partitioning.png  used on input line 328.
+Package pdftex.def Info: ./images/solutions/VHDL_-_Unroll_and_Array_Partitioning.png  used on input line 385.
 (pdftex.def)             Requested size: 188.26346pt x 166.38388pt.
- [27
+ [32
 
  <./images/solutions/VHDL_-_Unroll_and_Array_Partitioning.png>]
 File: ./images/solutions/VHDL_-_Unroll_and_Array_Partitioning.png Graphic file (type png)
 <use ./images/solutions/VHDL_-_Unroll_and_Array_Partitioning.png>
-Package pdftex.def Info: ./images/solutions/VHDL_-_Unroll_and_Array_Partitioning.png  used on input line 328.
+Package pdftex.def Info: ./images/solutions/VHDL_-_Unroll_and_Array_Partitioning.png  used on input line 385.
 (pdftex.def)             Requested size: 188.26346pt x 166.38388pt.
- [28
+ [33
 
-] [29
+] (./presentation.toc) [34
+
+] [35
+
+] [36
+
+] [37
+
+] [38
 
 ]
 \tf@nav=\write6
@@ -1110,21 +1189,21 @@ Package pdftex.def Info: ./images/solutions/VHDL_-_Unroll_and_Array_Partitioning
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `presentation.out' has not changed.
-(rerunfilecheck)             Checksum: 901BD435CD48A3E9993378F955B3CC0F;1380.
+(rerunfilecheck)             Checksum: F9D343ED161A033BA20344338C127334;1974.
  ) 
 Here is how much of TeX's memory you used:
- 31012 strings out of 480154
- 620658 string characters out of 5893788
- 1074632 words of memory out of 5000000
- 48266 multiletter control sequences out of 15000+600000
+ 29707 strings out of 480154
+ 582769 string characters out of 5893788
+ 1043275 words of memory out of 5000000
+ 46933 multiletter control sequences out of 15000+600000
  540777 words of font info for 91 fonts, out of 8000000 for 9000
  61 hyphenation exceptions out of 8191
- 99i,15n,104p,494b,1635s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 99i,15n,117p,494b,1738s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbo10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on presentation.pdf (29 pages, 1140708 bytes).
+Output written on presentation.pdf (38 pages, 2213652 bytes).
 PDF statistics:
- 1048 PDF objects out of 1200 (max. 8388607)
- 916 compressed objects within 10 object streams
- 75 named destinations out of 1000 (max. 500000)
- 319 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1342 PDF objects out of 1440 (max. 8388607)
+ 1196 compressed objects within 12 object streams
+ 100 named destinations out of 1000 (max. 500000)
+ 366 words of extra memory for PDF output out of 10000 (max. 10000000)
 
